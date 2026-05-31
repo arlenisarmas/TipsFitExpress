@@ -482,7 +482,7 @@ h3 {
 */
 .benefit-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 14px;
 }
 
@@ -532,7 +532,7 @@ h3 {
 
 .product-card-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 16px;
   width: min(1120px, calc(100% - 32px));
   margin: 0 auto;
@@ -568,6 +568,12 @@ h3 {
   background:
     linear-gradient(135deg, rgba(255, 228, 109, 0.5), transparent),
     repeating-linear-gradient(0deg, #ffffff 0 13px, #f3e9fb 13px 15px);
+}
+
+.card-visual.ebook {
+  background:
+    linear-gradient(135deg, rgba(168, 92, 242, 0.22), transparent 45%),
+    linear-gradient(90deg, #ffffff 0 28%, #f4e7ff 28% 34%, #ffffff 34% 100%);
 }
 
 .card-visual.calories {
