@@ -53,7 +53,19 @@ Luego se abre un Pull Request hacia `develop`.
 
 ## Vista local
 
-Este proyecto no necesita build. Para verlo, abre `index.html` en el navegador o usa la extension Live Server de Cursor/VS Code.
+Este proyecto no necesita build. Para verlo con servidor local:
+
+```bash
+node scripts/dev-server.mjs
+```
+
+Luego abre:
+
+```text
+http://localhost:5500
+```
+
+Tambien puedes usar la extension Live Server de Cursor/VS Code.
 
 ## Pendientes antes de vender
 
