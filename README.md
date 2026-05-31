@@ -27,9 +27,45 @@ Landing page para vender el bundle digital TipFit Express: menu mensual fit, lis
 - Cambios visuales: editar `src/css/styles.css`.
 - Cambios de secciones o contenido HTML: editar `index.html`.
 
+## Flujo de ramas
+
+- `main`: version estable. No se trabaja directo sobre esta rama.
+- `develop`: version de integracion. Recibe cambios revisados desde ramas de trabajo.
+- `feature/*`: ramas para cambios concretos. Se crean desde `develop` y luego se integran de vuelta a `develop`.
+
+Flujo recomendado:
+
+```bash
+git switch develop
+git pull
+git switch -c feature/nombre-del-cambio
+```
+
+Cuando el cambio esta listo:
+
+```bash
+git add .
+git commit -m "Describe el cambio"
+git push -u origin feature/nombre-del-cambio
+```
+
+Luego se abre un Pull Request hacia `develop`.
+
 ## Vista local
 
-Este proyecto no necesita build. Para verlo, abre `index.html` en el navegador o usa la extension Live Server de Cursor/VS Code.
+Este proyecto no necesita build. Para verlo con servidor local:
+
+```bash
+node scripts/dev-server.mjs
+```
+
+Luego abre:
+
+```text
+http://localhost:5500
+```
+
+Tambien puedes usar la extension Live Server de Cursor/VS Code.
 
 ## Pendientes antes de vender
 
