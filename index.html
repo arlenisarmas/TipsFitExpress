@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!--
+      CABECERA TECNICA DEL DOCUMENTO
+      Aqui van datos que el navegador y Google leen:
+      - Titulo de la pagina.
+      - Descripcion para SEO.
+      - Fuente tipografica.
+      - Archivo de estilos styles.css.
+      - Espacios para pegar Meta Pixel y TikTok Pixel cuando hagamos anuncios.
+    -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TipFit Express | Menu Mensual Fit</title>
+    <meta
+      name="description"
+      content="Menu mensual fit + bonos para organizar tus comidas desde el celular sin improvisar."
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Meta Pixel: pega aqui el codigo completo de Meta cuando lo tengas. -->
+    <!-- TikTok Pixel: pega aqui el codigo completo de TikTok cuando lo tengas. -->
+  </head>
+  <body>
+    <!--
+      HEADER / MENU SUPERIOR
+      Esta es la barra de arriba.
+      Aqui puedes cambiar:
+      - Nombre de la marca.
+      - Selector de idioma.
+      - Boton "Ver oferta".
+    -->
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="TipFit Express inicio">
+        <span class="brand-mark">TF</span>
+        <span>TipFit Express</span>
+      </a>
+      <div class="header-actions">
+        <select class="locale-select" id="languageSelect" aria-label="Idioma">
+          <option value="es">ES</option>
+          <option value="en">EN</option>
+          <option value="pt">PT</option>
+        </select>
+        <a class="header-cta" href="#oferta" data-i18n="navOffer">Ver oferta</a>
+      </div>
+    </header>
+
+    <main id="top">
+      <!--
+        HERO / PRIMERA PANTALLA
+        Esta es la parte mas importante de la landing.
+        Es lo primero que ve una persona que llega desde Instagram, Facebook o TikTok.
+        Aqui se vende la idea principal:
+        - Problema: dejar de improvisar comidas.
+        - Solucion: menu mensual fit + bonos.
+        - Precio.
+        - Boton principal de compra.
+        - Imagen visual del producto.
+      -->
+      <section class="hero">
+        <div class="hero-copy">
+          <div class="eyebrow">
+            <span class="live-dot"></span>
+            <span data-i18n="eyebrow">Oferta digital con acceso inmediato</span>
+          </div>
+          <h1 data-i18n="heroTitle">Deja de improvisar tus comidas</h1>
+          <p class="hero-subtitle" data-i18n="heroSubtitle">
+            Recibe un menu mensual fit + 3 bonos para organizarte desde hoy,
+            comprar mejor y saber que preparar sin pensar todo desde cero.
+          </p>
+
+          <div class="price-row" aria-label="Precio de oferta">
+            <div>
+              <span class="price-label" data-i18n="today">Hoy</span>
+              <strong>$9.99</strong>
+            </div>
+            <span class="old-price" data-i18n="oldPrice">Antes $29.99</span>
+            <span class="save-badge" data-i18n="save">Ahorras 67%</span>
+          </div>
+
+          <a class="primary-button" href="#pagos" data-i18n="mainCta">
+            Quiero mi menu ahora
+          </a>
+
+          <div class="trust-row" aria-label="Beneficios de compra">
+            <span data-i18n="trust1">Acceso inmediato</span>
+            <span data-i18n="trust2">Pago seguro</span>
+            <span data-i18n="trust3">PDF mobile</span>
+          </div>
+        </div>
+
+        <div class="hero-media" aria-label="Producto TipFit Express">
+          <div class="floating-note note-left">
+            <strong>+3</strong>
+            <span>bonos incluidos</span>
+          </div>
+          <img class="hero-person" src="assets/tipfit-hero-woman.png" alt="Mujer usando TipFit Express desde su celular">
+          <img class="hero-bundle-card" src="assets/tipfit-bundle.png" alt="Menu Mensual Fit con bonos TipFit Express">
+          <div class="floating-note note-right">
+            <strong>21</strong>
+            <span>dias para ordenar tu rutina</span>
+          </div>
+        </div>
+      </section>
+
+      <!--
+        FRANJA DE CONFIANZA / BENEFICIOS RAPIDOS
+        Esta franja muestra en pocas palabras que incluye el producto.
+        Sirve para que la persona entienda rapido que no compra solo un PDF.
+      -->
+      <section class="partner-strip" aria-label="Incluido en TipFit Express">
+        <span>Menu mensual</span>
+        <span>Lista de compras</span>
+        <span>Tabla de calorias</span>
+        <span>Postres fit</span>
+      </section>
+
+      <!--
+        BUSCADOR VISUAL
+        Este bloque es principalmente visual y de marketing.
+        Hace que la landing se sienta moderna, didactica y parecida a una plataforma.
+        No es un buscador real por ahora.
+      -->
+      <section class="quick-finder" aria-label="Busqueda rapida">
+        <p>Encuentra tu plan fit</p>
+        <form>
+          <input type="search" value="Menu mensual + bonos" aria-label="Buscar plan">
+          <button type="button">Buscar</button>
+        </form>
+      </section>
+
+      <!--
+        SECCION DE DOLOR
+        Aqui tocamos el problema emocional del publico:
+        - Empezar cada lunes.
+        - No saber que comer.
+        - Improvisar.
+        - Sentir que falta organizacion.
+        Esta parte ayuda a que la persona sienta "esto es para mi".
+      -->
+      <section class="pain-band">
+        <p class="section-kicker" data-i18n="painKicker">Para mujeres ocupadas</p>
+        <h2 data-i18n="painTitle">Si cada lunes vuelves a empezar...</h2>
+        <p data-i18n="painText">
+          No necesitas mas fuerza de voluntad. Necesitas un plan claro que te
+          diga que comer, que comprar y como ordenar tu semana desde el celular.
+        </p>
+      </section>
+
+      <!--
+        BENEFICIOS / QUE INCLUYE
+        Aqui explicamos el producto principal y los 3 bonos.
+        Cada tarjeta debe responder: "que recibo y por que me sirve".
+      -->
+      <section class="section">
+        <div class="section-heading">
+          <p class="section-kicker" data-i18n="bundleKicker">Bundle completo</p>
+          <h2 data-i18n="bundleTitle">Lo que recibes</h2>
+        </div>
+
+        <div class="benefit-grid">
+          <article class="benefit-card">
+            <span class="benefit-icon">01</span>
+            <h3 data-i18n="productTitle">Menu Mensual Fit</h3>
+            <p data-i18n="productText">Ideas de comidas organizadas para dejar de improvisar durante el mes.</p>
+          </article>
+          <article class="benefit-card">
+            <span class="benefit-icon">02</span>
+            <h3 data-i18n="bonus1Title">Lista de compras</h3>
+            <p data-i18n="bonus1Text">Compra con direccion y evita llenar el carrito con cosas que no necesitas.</p>
+          </article>
+          <article class="benefit-card">
+            <span class="benefit-icon">03</span>
+            <h3 data-i18n="bonus2Title">Tabla de calorias</h3>
+            <p data-i18n="bonus2Text">Referencia simple por alimento para tomar mejores decisiones sin complicarte.</p>
+          </article>
+          <article class="benefit-card">
+            <span class="benefit-icon">04</span>
+            <h3 data-i18n="bonus3Title">Postres Fit + Recetas Fit</h3>
+            <p data-i18n="bonus3Text">Opciones dulces y comidas faciles para sostener el plan con gusto.</p>
+          </article>
+        </div>
+      </section>
+
+      <!--
+        TARJETAS DEL PRODUCTO
+        Seccion visual tipo catalogo.
+        Sirve para que el pack parezca mas completo y tenga mayor valor percibido.
+        Si despues agregamos mas productos, esta seccion se puede reutilizar.
+      -->
+      <section class="popular-section">
+        <div class="section-heading centered">
+          <p class="section-kicker">Oferta visual</p>
+          <h2>Tu pack fit listo para usar</h2>
+        </div>
+        <div class="product-card-grid">
+          <article class="mini-product-card featured">
+            <img src="assets/tipfit-bundle.png" alt="Pack Menu Mensual Fit">
+            <div>
+              <span>Pack completo</span>
+              <h3>Menu Mensual Fit</h3>
+              <p>Producto principal + todos los bonos.</p>
+              <strong>$9.99</strong>
+            </div>
+          </article>
+          <article class="mini-product-card">
+            <div class="card-visual shopping"></div>
+            <div>
+              <span>Bono 1</span>
+              <h3>Lista de compras</h3>
+              <p>Compra rapido y sin improvisar.</p>
+            </div>
+          </article>
+          <article class="mini-product-card">
+            <div class="card-visual calories"></div>
+            <div>
+              <span>Bono 2</span>
+              <h3>Tabla de calorias</h3>
+              <p>Decisiones simples por alimento.</p>
+            </div>
+          </article>
+          <article class="mini-product-card">
+            <div class="card-visual dessert"></div>
+            <div>
+              <span>Bono 3</span>
+              <h3>Postres Fit</h3>
+              <p>Dulce sin abandonar tu plan.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!--
+        VISTA PREVIA
+        Muestra de forma conceptual como se usaria el producto.
+        Ayuda a reducir dudas antes de comprar.
+      -->
+      <section class="preview-section">
+        <div class="section-heading">
+          <p class="section-kicker" data-i18n="previewKicker">Vista previa</p>
+          <h2 data-i18n="previewTitle">Abrelo desde el telefono y empieza hoy</h2>
+        </div>
+        <div class="phone-preview">
+          <div class="phone-card">
+            <span data-i18n="previewCard1Label">Semana 1</span>
+            <strong data-i18n="previewCard1">Desayuno, almuerzo, cena</strong>
+          </div>
+          <div class="phone-card accent">
+            <span data-i18n="previewCard2Label">Compras</span>
+            <strong data-i18n="previewCard2">Lista ordenada por categoria</strong>
+          </div>
+          <div class="phone-card dark">
+            <span data-i18n="previewCard3Label">Bonus</span>
+            <strong data-i18n="previewCard3">Postres fit para antojos</strong>
+          </div>
+        </div>
+      </section>
+
+      <!--
+        PRUEBA SOCIAL / TESTIMONIOS
+        Esta parte aumenta confianza.
+        Importante: cuando tengamos ventas reales, reemplazar estos textos por
+        testimonios y numeros reales.
+      -->
+      <section class="section proof-section">
+        <div class="stat-strip">
+          <div>
+            <strong>+1.200</strong>
+            <span data-i18n="downloads">descargas estimadas</span>
+          </div>
+          <div>
+            <strong>4.8/5</strong>
+            <span data-i18n="rating">satisfaccion objetivo</span>
+          </div>
+        </div>
+
+        <div class="testimonial-grid">
+          <article>
+            <p data-i18n="testimonial1">"Me ayudo a dejar de pensar todos los dias que cocinar."</p>
+            <span data-i18n="client">Cliente TipFit</span>
+          </article>
+          <article>
+            <p data-i18n="testimonial2">"Lo use desde el celular mientras hacia las compras."</p>
+            <span data-i18n="client">Cliente TipFit</span>
+          </article>
+        </div>
+      </section>
+
+      <!--
+        OFERTA FINAL
+        Aqui se resume todo lo que la persona compra.
+        Debe ser claro:
+        - Que incluye.
+        - Precio.
+        - Garantia.
+        - Boton para ir a pagar.
+      -->
+      <section class="offer" id="oferta">
+        <p class="section-kicker" data-i18n="offerKicker">Oferta de lanzamiento</p>
+        <h2 data-i18n="offerTitle">Menu Mensual Fit + 3 bonos</h2>
+        <ul class="offer-list">
+          <li data-i18n="offerItem1">Menu mensual en PDF mobile</li>
+          <li data-i18n="offerItem2">Lista de compras</li>
+          <li data-i18n="offerItem3">Tabla de calorias por alimento</li>
+          <li data-i18n="offerItem4">Postres Fit + Recetas Fit</li>
+          <li data-i18n="offerItem5">Acceso inmediato despues del pago</li>
+        </ul>
+        <div class="offer-price">
+          <span data-i18n="finalPrice">Precio final hoy</span>
+          <strong>$9.99</strong>
+          <em data-i18n="guarantee">Garantia 7 dias</em>
+        </div>
+        <a class="primary-button" href="#pagos" data-i18n="buyPrice">
+          Comprar por $9.99
+        </a>
+      </section>
+
+      <!--
+        PAGOS / CHECKOUT INTELIGENTE
+        Aqui mostramos los metodos de pago disponibles.
+        La logica esta en app.js:
+        - Detecta pais por IP.
+        - Permite cambiar pais manualmente.
+        - Muestra solo los metodos disponibles para ese pais.
+        Los links reales de pago se cambian en app.js.
+      -->
+      <section class="section payment-section" id="pagos">
+        <div class="section-heading">
+          <p class="section-kicker" data-i18n="paymentKicker">Checkout inteligente</p>
+          <h2 data-i18n="paymentTitle">Elige como quieres pagar</h2>
+          <p data-i18n="paymentText">
+            Detectamos tu pais para mostrar metodos disponibles. Si usas VPN o la ubicacion falla,
+            puedes cambiar el pais manualmente.
+          </p>
+        </div>
+
+        <div class="geo-controls">
+          <div>
+            <span data-i18n="detected">Pais detectado</span>
+            <strong id="countryLabel">Detectando...</strong>
+          </div>
+          <label>
+            <span data-i18n="changeCountry">Cambiar pais</span>
+            <select id="countrySelect" aria-label="Pais">
+              <option value="AR">Argentina</option>
+              <option value="BO">Bolivia</option>
+              <option value="BR">Brasil</option>
+              <option value="CL">Chile</option>
+              <option value="CO">Colombia</option>
+              <option value="CR">Costa Rica</option>
+              <option value="DO">Republica Dominicana</option>
+              <option value="EC">Ecuador</option>
+              <option value="SV">El Salvador</option>
+              <option value="ES">Espana</option>
+              <option value="GT">Guatemala</option>
+              <option value="HN">Honduras</option>
+              <option value="MX">Mexico</option>
+              <option value="NI">Nicaragua</option>
+              <option value="PA">Panama</option>
+              <option value="PE">Peru</option>
+              <option value="PR">Puerto Rico</option>
+              <option value="PT">Portugal</option>
+              <option value="PY">Paraguay</option>
+              <option value="UY">Uruguay</option>
+              <option value="US">Estados Unidos</option>
+              <option value="VE">Venezuela</option>
+              <option value="OTHER">Otro pais</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="payment-grid" id="paymentGrid">
+          <article class="payment-card" data-provider="mercadopago">
+            <span>LATAM</span>
+            <h3>Mercado Pago</h3>
+            <p data-i18n="mpText">Ideal si estas en paises de Latinoamerica donde Mercado Pago opera.</p>
+            <a class="js-buy" href="#" data-payment-link="https://tu-link-mercadopago.com">Pagar con Mercado Pago</a>
+          </article>
+          <article class="payment-card" data-provider="paypal">
+            <span>GLOBAL</span>
+            <h3>PayPal</h3>
+            <p data-i18n="paypalText">Opcion internacional para clientes que prefieren pagar con PayPal.</p>
+            <a class="js-buy" href="#" data-payment-link="https://tu-link-paypal.com">Pagar con PayPal</a>
+          </article>
+          <article class="payment-card" data-provider="stripe">
+            <span>CARDS</span>
+            <h3>Stripe</h3>
+            <p data-i18n="stripeText">Tarjetas y wallets en paises habilitados para checkout internacional.</p>
+            <a class="js-buy" href="#" data-payment-link="https://tu-link-stripe.com">Pagar con tarjeta</a>
+          </article>
+          <article class="payment-card" data-provider="lemonsqueezy">
+            <span>DIGITAL</span>
+            <h3>Lemon Squeezy</h3>
+            <p data-i18n="lemonText">Muy util para productos digitales, impuestos y ventas internacionales.</p>
+            <a class="js-buy" href="#" data-payment-link="https://tu-link-lemonsqueezy.com">Pagar internacional</a>
+          </article>
+        </div>
+      </section>
+
+      <!--
+        PREGUNTAS FRECUENTES
+        Sirve para responder objeciones antes de comprar.
+        Ejemplos:
+        - Como recibo el producto.
+        - Si necesito experiencia.
+        - Si sirve para personas con poco tiempo.
+      -->
+      <section class="section faq">
+        <div class="section-heading">
+          <p class="section-kicker" data-i18n="faqKicker">Preguntas frecuentes</p>
+          <h2 data-i18n="faqTitle">Antes de comprar</h2>
+        </div>
+        <details open>
+          <summary data-i18n="faq1Q">Como recibo el menu?</summary>
+          <p data-i18n="faq1A">Despues del pago recibes el acceso al PDF y los bonos en la pagina de gracias o por email.</p>
+        </details>
+        <details>
+          <summary data-i18n="faq2Q">Necesito experiencia cocinando?</summary>
+          <p data-i18n="faq2A">No. La idea es que sea simple, practico y facil de seguir desde tu telefono.</p>
+        </details>
+        <details>
+          <summary data-i18n="faq3Q">Sirve si tengo poco tiempo?</summary>
+          <p data-i18n="faq3A">Si. La landing esta pensada para vender una solucion de organizacion rapida, no una dieta complicada.</p>
+        </details>
+      </section>
+    </main>
+
+    <!--
+      BOTON FIJO INFERIOR
+      Este boton queda siempre visible abajo.
+      Es importante para mobile porque la persona puede comprar sin volver arriba.
+    -->
+    <nav class="sticky-buy" aria-label="Compra rapida">
+      <div>
+        <span data-i18n="stickyProduct">Menu + 3 bonos</span>
+        <strong>$9.99</strong>
+      </div>
+      <a href="#pagos" data-i18n="stickyBuy">Comprar</a>
+    </nav>
+
+    <script src="app.js"></script>
+  </body>
+</html>

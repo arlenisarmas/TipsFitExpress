@@ -1,0 +1,1090 @@
+:root {
+  /*
+    VARIABLES DE DISENO
+    Estos son los colores principales de toda la pagina.
+    Si quieres cambiar la personalidad visual de la marca, empieza aqui.
+  */
+  --bg: #fff8ff;
+  --surface: #ffffff;
+  --ink: #21172d;
+  --muted: #756b80;
+  --line: #eadcf2;
+  --mint: #e6fbef;
+  --green: #119766;
+  --coral: #ff4f8b;
+  --coral-dark: #d9346f;
+  --yellow: #ffe46d;
+  --lavender: #a85cf2;
+  --pink: #ff8bd2;
+  --soft-lavender: #f4e7ff;
+  --shadow: 0 20px 58px rgba(71, 35, 103, 0.13);
+}
+
+/*
+  BASE GENERAL
+  Reglas basicas para que todos los navegadores calculen tamanos de forma parecida.
+*/
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--bg);
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  letter-spacing: 0;
+}
+
+body::before {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(135deg, rgba(244, 231, 255, 0.95), transparent 42%),
+    linear-gradient(315deg, rgba(255, 139, 210, 0.22), transparent 40%),
+    linear-gradient(180deg, rgba(230, 251, 239, 0.5), transparent 70%);
+  content: "";
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  HEADER / MENU SUPERIOR
+  Estilos de la barra superior: logo, idioma y boton de oferta.
+*/
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 66px;
+  padding: 12px clamp(18px, 5vw, 54px);
+  background: rgba(255, 248, 255, 0.88);
+  border-bottom: 1px solid rgba(234, 220, 242, 0.86);
+  backdrop-filter: blur(16px);
+}
+
+.brand,
+.header-actions,
+.eyebrow,
+.trust-row,
+.price-row {
+  display: flex;
+  align-items: center;
+}
+
+.brand {
+  gap: 10px;
+  font-size: 0.95rem;
+  font-weight: 900;
+}
+
+.brand-mark {
+  display: grid;
+  width: 38px;
+  height: 38px;
+  color: white;
+  background: linear-gradient(135deg, var(--lavender), var(--coral));
+  border-radius: 10px;
+  place-items: center;
+}
+
+.header-actions {
+  gap: 8px;
+}
+
+.header-cta {
+  padding: 10px 14px;
+  color: white;
+  background: linear-gradient(135deg, var(--lavender), var(--coral));
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+.locale-select,
+#countrySelect {
+  min-height: 40px;
+  padding: 0 10px;
+  color: var(--ink);
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 900;
+}
+
+/*
+  HERO / PRIMERA PANTALLA
+  Estilos del bloque principal de venta:
+  texto, precio, boton, imagen de mujer y tarjeta flotante del producto.
+*/
+.hero,
+.section,
+.preview-section,
+.pain-band,
+.offer {
+  width: min(1120px, calc(100% - 32px));
+  margin: 0 auto;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.02fr) minmax(320px, 0.98fr);
+  gap: 34px;
+  align-items: center;
+  min-height: calc(100svh - 66px);
+  padding: 38px 0 18px;
+}
+
+.hero-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+.eyebrow,
+.section-kicker {
+  gap: 8px;
+  margin: 0;
+  color: var(--lavender);
+  font-size: 0.78rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.live-dot {
+  width: 9px;
+  height: 9px;
+  background: var(--coral);
+  border-radius: 999px;
+  box-shadow: 0 0 0 6px rgba(255, 79, 139, 0.13);
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  max-width: 670px;
+  margin-bottom: 0;
+  font-size: clamp(3.1rem, 8vw, 6.25rem);
+  line-height: 0.93;
+  font-weight: 900;
+}
+
+h2 {
+  margin-bottom: 14px;
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  line-height: 1;
+  font-weight: 900;
+}
+
+h3 {
+  margin-bottom: 8px;
+  font-size: 1.05rem;
+  line-height: 1.15;
+}
+
+.hero-subtitle,
+.pain-band p,
+.benefit-card p,
+.faq p {
+  color: var(--muted);
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.hero-subtitle {
+  max-width: 610px;
+  margin-bottom: 0;
+}
+
+.price-row {
+  flex-wrap: wrap;
+  gap: 12px;
+  width: 100%;
+}
+
+.price-row div {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.price-label,
+.old-price {
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.price-row strong {
+  color: var(--lavender);
+  font-size: 2.55rem;
+  line-height: 1;
+}
+
+.old-price {
+  text-decoration: line-through;
+}
+
+.save-badge {
+  padding: 8px 10px;
+  color: #4b3164;
+  background: var(--yellow);
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 900;
+}
+
+.primary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 58px;
+  padding: 0 24px;
+  color: white;
+  background: linear-gradient(135deg, var(--coral), var(--lavender));
+  border: 0;
+  border-radius: 12px;
+  box-shadow: 0 16px 34px rgba(168, 92, 242, 0.25);
+  font-size: 1rem;
+  font-weight: 900;
+  cursor: pointer;
+  transition: transform 160ms ease, filter 160ms ease;
+}
+
+.primary-button:hover {
+  filter: saturate(1.12);
+  transform: translateY(-1px);
+}
+
+.trust-row {
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+.trust-row span {
+  padding: 9px 11px;
+  color: var(--muted);
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.hero-media {
+  position: relative;
+  padding: 24px;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 28% 24%, rgba(255, 228, 109, 0.7), transparent 30%),
+    linear-gradient(145deg, #f8d9ff, #d7b4ff 48%, #ff9cd7);
+  border: 1px solid rgba(168, 92, 242, 0.16);
+  border-radius: 22px;
+  box-shadow: var(--shadow);
+}
+
+.hero-person {
+  width: 100%;
+  min-height: 430px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 18px;
+  filter: drop-shadow(0 22px 30px rgba(71, 35, 103, 0.18));
+}
+
+.hero-bundle-card {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  z-index: 3;
+  width: min(46%, 250px);
+  padding: 8px;
+  background: rgba(255, 255, 255, 0.86);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 14px;
+  box-shadow: 0 18px 38px rgba(71, 35, 103, 0.2);
+}
+
+.floating-note {
+  position: absolute;
+  z-index: 2;
+  display: grid;
+  gap: 2px;
+  max-width: 150px;
+  padding: 12px 14px;
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 14px;
+  box-shadow: 0 12px 34px rgba(71, 35, 103, 0.16);
+  backdrop-filter: blur(14px);
+}
+
+.floating-note strong {
+  color: var(--lavender);
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.floating-note span {
+  color: var(--muted);
+  font-size: 0.73rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.note-left {
+  top: 18px;
+  left: 18px;
+}
+
+.note-right {
+  right: 18px;
+  bottom: 168px;
+}
+
+/*
+  BLOQUES SUPERIORES DE MARKETING
+  Franja de beneficios y buscador visual.
+  Son elementos para que la landing se sienta mas moderna y didactica.
+*/
+.partner-strip {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  width: 100%;
+  margin: 0 auto;
+  color: white;
+  background: linear-gradient(90deg, var(--lavender), var(--pink));
+  font-weight: 900;
+  text-align: center;
+}
+
+.partner-strip span {
+  padding: 18px 12px;
+  border-right: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.quick-finder {
+  display: grid;
+  gap: 14px;
+  width: min(780px, calc(100% - 32px));
+  margin: 34px auto 0;
+  text-align: center;
+}
+
+.quick-finder p {
+  margin-bottom: 0;
+  color: var(--ink);
+  font-weight: 900;
+}
+
+.quick-finder form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px;
+  padding: 10px;
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  box-shadow: 0 14px 38px rgba(71, 35, 103, 0.08);
+}
+
+.quick-finder input,
+.quick-finder button {
+  min-height: 48px;
+  border: 0;
+  border-radius: 11px;
+  font: inherit;
+  font-weight: 800;
+}
+
+.quick-finder input {
+  width: 100%;
+  padding: 0 14px;
+  color: var(--muted);
+  background: #fbf5ff;
+}
+
+.quick-finder button {
+  padding: 0 22px;
+  color: white;
+  background: var(--lavender);
+}
+
+/*
+  SECCION DE DOLOR
+  Estilos del bloque oscuro donde conectamos con el problema del publico.
+*/
+.pain-band {
+  padding: clamp(26px, 5vw, 54px);
+  color: white;
+  background: linear-gradient(135deg, #2a1837, #5d2d87);
+  border-radius: 18px;
+}
+
+.pain-band .section-kicker {
+  color: var(--yellow);
+}
+
+.pain-band p:last-child {
+  max-width: 780px;
+  margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+/*
+  SECCIONES COMPARTIDAS
+  Reglas generales usadas por varias partes de la landing.
+*/
+.section,
+.preview-section,
+.offer {
+  padding: 62px 0 0;
+}
+
+.section-heading {
+  max-width: 650px;
+  margin-bottom: 24px;
+}
+
+.centered {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+/*
+  TARJETAS DE BENEFICIOS
+  Estilos para las tarjetas que explican el menu y los bonos.
+*/
+.benefit-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.benefit-card,
+.testimonial-grid article,
+.phone-card,
+.offer,
+.faq details {
+  background: rgba(255, 255, 255, 0.86);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  box-shadow: 0 14px 35px rgba(71, 35, 103, 0.07);
+}
+
+.benefit-card {
+  min-height: 224px;
+  padding: 18px;
+}
+
+.benefit-icon {
+  display: inline-grid;
+  width: 42px;
+  height: 42px;
+  margin-bottom: 28px;
+  color: var(--lavender);
+  background: var(--soft-lavender);
+  border-radius: 999px;
+  font-weight: 900;
+  place-items: center;
+}
+
+/*
+  TARJETAS DEL PACK
+  Estilos de la seccion tipo catalogo donde mostramos el producto y bonos.
+*/
+.popular-section {
+  width: 100%;
+  margin-top: 62px;
+  padding: 58px max(16px, calc((100vw - 1120px) / 2));
+  background: linear-gradient(135deg, var(--lavender), var(--pink));
+}
+
+.popular-section .section-kicker,
+.popular-section h2 {
+  color: white;
+}
+
+.product-card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  width: min(1120px, calc(100% - 32px));
+  margin: 0 auto;
+}
+
+.mini-product-card {
+  display: grid;
+  gap: 12px;
+  min-height: 330px;
+  padding: 12px;
+  background: white;
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  border-radius: 16px;
+  box-shadow: 0 18px 44px rgba(71, 35, 103, 0.18);
+}
+
+.mini-product-card img,
+.card-visual {
+  width: 100%;
+  aspect-ratio: 1.18;
+  object-fit: contain;
+  background: #f8efff;
+  border-radius: 12px;
+}
+
+.card-visual {
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.45), transparent),
+    var(--soft-lavender);
+}
+
+.card-visual.shopping {
+  background:
+    linear-gradient(135deg, rgba(255, 228, 109, 0.5), transparent),
+    repeating-linear-gradient(0deg, #ffffff 0 13px, #f3e9fb 13px 15px);
+}
+
+.card-visual.calories {
+  background:
+    linear-gradient(135deg, rgba(230, 251, 239, 0.8), transparent),
+    linear-gradient(90deg, #f7f0ff 18%, transparent 18% 100%),
+    repeating-linear-gradient(0deg, #ffffff 0 18px, #eadcf2 18px 20px);
+}
+
+.card-visual.dessert {
+  background:
+    radial-gradient(circle at 50% 42%, #ff8bd2 0 24%, transparent 25%),
+    radial-gradient(circle at 42% 34%, #ffe46d 0 9%, transparent 10%),
+    linear-gradient(135deg, #fff, #f4e7ff);
+}
+
+.mini-product-card span {
+  color: var(--lavender);
+  font-size: 0.72rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.mini-product-card h3 {
+  margin: 4px 0 7px;
+}
+
+.mini-product-card p {
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.mini-product-card strong {
+  color: var(--coral);
+  font-size: 1.35rem;
+}
+
+/*
+  VISTA PREVIA
+  Tarjetas que muestran como se veria el contenido dentro del producto.
+*/
+.phone-preview {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr 0.8fr;
+  gap: 14px;
+}
+
+.phone-card {
+  min-height: 172px;
+  padding: 18px;
+}
+
+.phone-card span,
+.testimonial-grid span,
+.offer-price span,
+.offer-price em,
+.sticky-buy span {
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-style: normal;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.phone-card strong {
+  display: block;
+  margin-top: 54px;
+  font-size: 1.3rem;
+  line-height: 1.1;
+}
+
+.phone-card.accent {
+  background: linear-gradient(135deg, var(--yellow), #ffd1ec);
+}
+
+.phone-card.dark {
+  color: white;
+  background: linear-gradient(135deg, var(--lavender), #722fc8);
+}
+
+.phone-card.dark span {
+  color: rgba(255, 255, 255, 0.76);
+}
+
+/*
+  PRUEBA SOCIAL
+  Numeros y testimonios. Cambiar por datos reales cuando existan.
+*/
+.proof-section {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 16px;
+}
+
+.stat-strip {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.stat-strip div {
+  padding: 18px;
+  color: white;
+  background: linear-gradient(135deg, var(--lavender), #6d2bc2);
+  border-radius: 14px;
+}
+
+.stat-strip strong {
+  display: block;
+  font-size: 2.2rem;
+}
+
+.stat-strip span {
+  color: rgba(255, 255, 255, 0.72);
+  font-weight: 800;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.testimonial-grid article {
+  min-height: 158px;
+  padding: 20px;
+}
+
+.testimonial-grid p {
+  font-size: 1.08rem;
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+/*
+  OFERTA Y PRECIO
+  Bloque donde se resume el pack, el precio y la garantia.
+*/
+.offer {
+  display: grid;
+  gap: 18px;
+  padding: clamp(26px, 5vw, 52px);
+  text-align: center;
+  background:
+    radial-gradient(circle at 20% 0%, rgba(255, 228, 109, 0.55), transparent 34%),
+    linear-gradient(140deg, rgba(244, 231, 255, 0.96), rgba(255, 255, 255, 0.95)),
+    var(--surface);
+}
+
+.offer .primary-button {
+  width: min(100%, 420px);
+  margin: 0 auto;
+}
+
+.offer-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  width: min(690px, 100%);
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+}
+
+.offer-list li {
+  padding: 13px 14px;
+  color: var(--muted);
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 13px;
+  font-weight: 800;
+}
+
+/*
+  SELECTOR DE PAGOS
+  Estilos de pais detectado, selector manual y tarjetas de metodos de pago.
+*/
+.payment-section .section-heading p:last-child {
+  color: var(--muted);
+  font-size: 1.02rem;
+  line-height: 1.55;
+}
+
+.geo-controls {
+  display: grid;
+  grid-template-columns: 1fr minmax(230px, 0.7fr);
+  gap: 14px;
+  align-items: end;
+  margin-bottom: 16px;
+}
+
+.geo-controls > div,
+.geo-controls label,
+.payment-card {
+  padding: 18px;
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  box-shadow: 0 14px 35px rgba(71, 35, 103, 0.07);
+}
+
+.geo-controls span,
+.payment-card span {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--lavender);
+  font-size: 0.76rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.geo-controls strong {
+  display: block;
+  font-size: 1.4rem;
+}
+
+.geo-controls label {
+  display: grid;
+}
+
+#countrySelect {
+  width: 100%;
+}
+
+.payment-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.payment-card {
+  display: grid;
+  align-content: start;
+  gap: 10px;
+  min-height: 246px;
+}
+
+.payment-card p {
+  margin-bottom: 10px;
+  color: var(--muted);
+  font-size: 0.94rem;
+  line-height: 1.5;
+}
+
+.payment-card a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  margin-top: auto;
+  padding: 0 14px;
+  color: white;
+  background: var(--ink);
+  border-radius: 11px;
+  font-size: 0.88rem;
+  font-weight: 900;
+  text-align: center;
+}
+
+.payment-card[hidden] {
+  display: none;
+}
+
+/*
+  PREGUNTAS FRECUENTES
+  Estilos del acordeon de preguntas y respuestas.
+*/
+.offer-price strong {
+  display: block;
+  font-size: 3.5rem;
+  line-height: 1;
+}
+
+.offer-price em {
+  display: block;
+  margin-top: 8px;
+  color: var(--lavender);
+}
+
+.faq {
+  padding-bottom: 118px;
+}
+
+.faq details {
+  margin-bottom: 10px;
+  padding: 0 18px;
+}
+
+.faq summary {
+  min-height: 62px;
+  padding-top: 20px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.faq p {
+  margin-bottom: 18px;
+}
+
+/*
+  BOTON FIJO DE COMPRA
+  Barra inferior que aparece fija en pantalla para mejorar conversion en mobile.
+*/
+.sticky-buy {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  left: 16px;
+  z-index: 30;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  max-width: 680px;
+  min-height: 70px;
+  margin: 0 auto;
+  padding: 10px 10px 10px 16px;
+  color: white;
+  background: rgba(33, 23, 45, 0.94);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 16px;
+  box-shadow: 0 18px 48px rgba(33, 23, 45, 0.3);
+  backdrop-filter: blur(16px);
+}
+
+.sticky-buy div {
+  display: grid;
+  gap: 2px;
+}
+
+.sticky-buy span {
+  color: rgba(255, 255, 255, 0.68);
+}
+
+.sticky-buy strong {
+  font-size: 1.35rem;
+}
+
+.sticky-buy a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 122px;
+  min-height: 48px;
+  padding: 0 18px;
+  background: linear-gradient(135deg, var(--coral), var(--lavender));
+  border-radius: 11px;
+  font-weight: 900;
+}
+
+/*
+  RESPONSIVE: TABLET Y PANTALLAS MEDIANAS
+  Aqui la pagina cambia de columnas a bloques verticales.
+*/
+@media (max-width: 860px) {
+  .hero {
+    grid-template-columns: 1fr;
+    min-height: auto;
+    padding-top: 24px;
+  }
+
+  .hero-copy {
+    order: 1;
+  }
+
+  .hero-media {
+    order: 2;
+    padding: 14px;
+    border-radius: 18px;
+  }
+
+  .benefit-grid,
+  .proof-section,
+  .testimonial-grid,
+  .offer-list,
+  .geo-controls,
+  .payment-grid,
+  .product-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .partner-strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .phone-preview {
+    display: flex;
+    overflow-x: auto;
+    padding-bottom: 8px;
+    scroll-snap-type: x mandatory;
+  }
+
+  .phone-card {
+    flex: 0 0 78%;
+    scroll-snap-align: start;
+  }
+}
+
+/*
+  RESPONSIVE: MOBILE
+  Ajustes especificos para celulares.
+  Muy importante porque el trafico vendra de Instagram, Facebook y TikTok.
+*/
+@media (max-width: 520px) {
+  .site-header {
+    min-height: 60px;
+    padding: 10px 14px;
+  }
+
+  .brand {
+    gap: 8px;
+  }
+
+  .brand-mark {
+    width: 34px;
+    height: 34px;
+  }
+
+  .header-cta {
+    display: none;
+  }
+
+  .hero,
+  .section,
+  .preview-section,
+  .pain-band,
+  .offer {
+    width: min(100% - 24px, 1120px);
+  }
+
+  .hero {
+    gap: 18px;
+  }
+
+  h1 {
+    font-size: clamp(2.7rem, 15vw, 4.35rem);
+  }
+
+  .hero-subtitle,
+  .pain-band p,
+  .benefit-card p,
+  .faq p {
+    font-size: 0.98rem;
+  }
+
+  .price-row strong {
+    font-size: 2.05rem;
+  }
+
+  .primary-button {
+    width: 100%;
+  }
+
+  .trust-row span {
+    flex: 1 1 auto;
+    text-align: center;
+  }
+
+  .section,
+  .preview-section,
+  .offer {
+    padding-top: 44px;
+  }
+
+  .partner-strip span {
+    padding: 14px 8px;
+    font-size: 0.78rem;
+  }
+
+  .quick-finder form {
+    grid-template-columns: 1fr;
+  }
+
+  .floating-note {
+    max-width: 126px;
+    padding: 10px;
+  }
+
+  .note-left {
+    top: 10px;
+    left: 10px;
+  }
+
+  .note-right {
+    right: 10px;
+    bottom: 132px;
+  }
+
+  .hero-person {
+    min-height: 360px;
+  }
+
+  .hero-bundle-card {
+    right: 12px;
+    bottom: 12px;
+    width: 52%;
+  }
+
+  .popular-section {
+    margin-top: 44px;
+    padding-top: 44px;
+    padding-bottom: 44px;
+  }
+
+  .benefit-card {
+    min-height: 190px;
+  }
+
+  .phone-card {
+    flex-basis: 88%;
+  }
+
+  .sticky-buy {
+    right: 10px;
+    bottom: 10px;
+    left: 10px;
+  }
+}
