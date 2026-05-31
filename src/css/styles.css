@@ -329,6 +329,19 @@ h3 {
   content: "";
 }
 
+.hero-media-image {
+  min-height: auto;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  box-shadow: 0 28px 80px rgba(18, 79, 56, 0.18);
+}
+
+.hero-media-image::before,
+.hero-media-image::after {
+  content: none;
+}
+
 .hero-person {
   position: relative;
   z-index: 2;
@@ -339,6 +352,13 @@ h3 {
   object-position: center;
   border-radius: 23px;
   filter: saturate(0.96) drop-shadow(0 26px 34px rgba(18, 79, 56, 0.16));
+}
+
+.hero-media-image .hero-person {
+  min-height: 0;
+  object-fit: contain;
+  border-radius: 30px;
+  filter: none;
 }
 
 .hero-bundle-card {
@@ -1045,6 +1065,14 @@ h3 {
     min-height: 532px;
   }
 
+  .hero-media-image {
+    min-height: auto;
+  }
+
+  .hero-media-image .hero-person {
+    min-height: 0;
+  }
+
   .benefit-grid,
   .proof-section,
   .testimonial-grid,
@@ -1156,6 +1184,10 @@ h3 {
     min-height: 500px;
   }
 
+  .hero-media-image {
+    min-height: auto;
+  }
+
   .hero-media::before {
     inset: 8px;
     border-radius: 16px;
@@ -1210,6 +1242,10 @@ h3 {
 
   .hero-person {
     min-height: 472px;
+  }
+
+  .hero-media-image .hero-person {
+    min-height: 0;
   }
 
   .hero-bundle-card {
