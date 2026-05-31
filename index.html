@@ -7,7 +7,7 @@
       - Titulo de la pagina.
       - Descripcion para SEO.
       - Fuente tipografica.
-      - Archivo de estilos styles.css.
+      - Archivo de estilos src/css/styles.css.
       - Espacios para pegar Meta Pixel y TikTok Pixel cuando hagamos anuncios.
     -->
     <meta charset="utf-8">
@@ -23,7 +23,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap"
       rel="stylesheet"
     >
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="src/css/styles.css">
 
     <!-- Meta Pixel: pega aqui el codigo completo de Meta cuando lo tengas. -->
     <!-- TikTok Pixel: pega aqui el codigo completo de TikTok cuando lo tengas. -->
@@ -101,8 +101,8 @@
             <strong>+3</strong>
             <span>bonos incluidos</span>
           </div>
-          <img class="hero-person" src="assets/tipfit-hero-woman.png" alt="Mujer usando TipFit Express desde su celular">
-          <img class="hero-bundle-card" src="assets/tipfit-bundle.png" alt="Menu Mensual Fit con bonos TipFit Express">
+          <img class="hero-person" src="assets/images/tipfit-hero-woman.png" alt="Mujer usando TipFit Express desde su celular">
+          <img class="hero-bundle-card" src="assets/images/tipfit-bundle.png" alt="Menu Mensual Fit con bonos TipFit Express">
           <div class="floating-note note-right">
             <strong>21</strong>
             <span>dias para ordenar tu rutina</span>
@@ -202,7 +202,7 @@
         </div>
         <div class="product-card-grid">
           <article class="mini-product-card featured">
-            <img src="assets/tipfit-bundle.png" alt="Pack Menu Mensual Fit">
+            <img src="assets/images/tipfit-bundle.png" alt="Pack Menu Mensual Fit">
             <div>
               <span>Pack completo</span>
               <h3>Menu Mensual Fit</h3>
@@ -325,11 +325,11 @@
       <!--
         PAGOS / CHECKOUT INTELIGENTE
         Aqui mostramos los metodos de pago disponibles.
-        La logica esta en app.js:
+        La logica esta en src/js/app.js:
         - Detecta pais por IP.
         - Permite cambiar pais manualmente.
         - Muestra solo los metodos disponibles para ese pais.
-        Los links reales de pago se cambian en app.js.
+        Los links reales de pago se cambian en src/js/config.js.
       -->
       <section class="section payment-section" id="pagos">
         <div class="section-heading">
@@ -349,29 +349,6 @@
           <label>
             <span data-i18n="changeCountry">Cambiar pais</span>
             <select id="countrySelect" aria-label="Pais">
-              <option value="AR">Argentina</option>
-              <option value="BO">Bolivia</option>
-              <option value="BR">Brasil</option>
-              <option value="CL">Chile</option>
-              <option value="CO">Colombia</option>
-              <option value="CR">Costa Rica</option>
-              <option value="DO">Republica Dominicana</option>
-              <option value="EC">Ecuador</option>
-              <option value="SV">El Salvador</option>
-              <option value="ES">Espana</option>
-              <option value="GT">Guatemala</option>
-              <option value="HN">Honduras</option>
-              <option value="MX">Mexico</option>
-              <option value="NI">Nicaragua</option>
-              <option value="PA">Panama</option>
-              <option value="PE">Peru</option>
-              <option value="PR">Puerto Rico</option>
-              <option value="PT">Portugal</option>
-              <option value="PY">Paraguay</option>
-              <option value="UY">Uruguay</option>
-              <option value="US">Estados Unidos</option>
-              <option value="VE">Venezuela</option>
-              <option value="OTHER">Otro pais</option>
             </select>
           </label>
         </div>
@@ -381,25 +358,25 @@
             <span>LATAM</span>
             <h3>Mercado Pago</h3>
             <p data-i18n="mpText">Ideal si estas en paises de Latinoamerica donde Mercado Pago opera.</p>
-            <a class="js-buy" href="#" data-payment-link="https://tu-link-mercadopago.com">Pagar con Mercado Pago</a>
+            <a class="js-buy" href="#">Pagar con Mercado Pago</a>
           </article>
           <article class="payment-card" data-provider="paypal">
             <span>GLOBAL</span>
             <h3>PayPal</h3>
             <p data-i18n="paypalText">Opcion internacional para clientes que prefieren pagar con PayPal.</p>
-            <a class="js-buy" href="#" data-payment-link="https://tu-link-paypal.com">Pagar con PayPal</a>
+            <a class="js-buy" href="#">Pagar con PayPal</a>
           </article>
           <article class="payment-card" data-provider="stripe">
             <span>CARDS</span>
             <h3>Stripe</h3>
             <p data-i18n="stripeText">Tarjetas y wallets en paises habilitados para checkout internacional.</p>
-            <a class="js-buy" href="#" data-payment-link="https://tu-link-stripe.com">Pagar con tarjeta</a>
+            <a class="js-buy" href="#">Pagar con tarjeta</a>
           </article>
           <article class="payment-card" data-provider="lemonsqueezy">
             <span>DIGITAL</span>
             <h3>Lemon Squeezy</h3>
             <p data-i18n="lemonText">Muy util para productos digitales, impuestos y ventas internacionales.</p>
-            <a class="js-buy" href="#" data-payment-link="https://tu-link-lemonsqueezy.com">Pagar internacional</a>
+            <a class="js-buy" href="#">Pagar internacional</a>
           </article>
         </div>
       </section>
@@ -445,6 +422,8 @@
       <a href="#pagos" data-i18n="stickyBuy">Comprar</a>
     </nav>
 
-    <script src="app.js"></script>
+    <script src="src/js/config.js"></script>
+    <script src="src/js/i18n.js"></script>
+    <script src="src/js/app.js"></script>
   </body>
 </html>
