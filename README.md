@@ -1,74 +1,90 @@
 # TipsFitExpress
 
-Landing page para vender el bundle digital TipFit Express: menu mensual fit, lista de compras, tabla de calorias y bonos de recetas.
+Landing page estatica para vender el producto digital **Menu Mensual para bajar de peso** con tres bonos gratuitos:
+
+1. Tabla de calorias y porciones.
+2. Calculadora de calorias personalizada.
+3. Postres saludables.
+
+La version actual esta en espanol y no usa geolocalizacion, selector de idioma ni checkout inteligente.
 
 ## Estructura
 
 ```text
 .
-├── assets/
-│   └── images/          # Imagenes usadas por la landing
-├── src/
-│   ├── css/
-│   │   └── styles.css   # Estilos globales y responsive
-│   └── js/
-│       ├── app.js       # Logica de idioma, pais y checkout
-│       ├── config.js    # Paises, metodos y links de pago
-│       └── i18n.js      # Textos ES/EN/PT
-├── index.html           # Estructura principal de la landing
-└── README.md
+|-- assets/
+|   `-- landing/              # Imagenes de produccion de la landing
+|-- docs/                     # Auditoria, QA y arquitectura
+|-- scripts/
+|   `-- dev-server.mjs        # Servidor local sin dependencias
+|-- src/
+|   `-- css/
+|       `-- styles.css        # Tokens, base, componentes, layout y responsive
+|-- index.html                # Entrada principal
+|-- start-local-server.ps1    # Arranque local para Windows
+`-- README.md
 ```
 
-## Como editar sin pisarnos
+## Ver localmente
 
-- Cambios de texto: editar `src/js/i18n.js`.
-- Cambios de links de pago: editar `paymentLinks` en `src/js/config.js`.
-- Cambios de paises o disponibilidad de pagos: editar `countries` y `paymentAvailability` en `src/js/config.js`.
-- Cambios visuales: editar `src/css/styles.css`.
-- Cambios de secciones o contenido HTML: editar `index.html`.
+Opcion directa, sin servidor:
 
-## Flujo de ramas
-
-- `main`: version estable. No se trabaja directo sobre esta rama.
-- `develop`: version de integracion. Recibe cambios revisados desde ramas de trabajo.
-- `feature/*`: ramas para cambios concretos. Se crean desde `develop` y luego se integran de vuelta a `develop`.
-
-Flujo recomendado:
-
-```bash
-git switch develop
-git pull
-git switch -c feature/nombre-del-cambio
+```text
+C:\Users\arlen\Documents\Codex\2026-05-30\TipsFitExpress\index.html
 ```
 
-Cuando el cambio esta listo:
+Opcion con servidor local:
 
-```bash
-git add .
-git commit -m "Describe el cambio"
-git push -u origin feature/nombre-del-cambio
+```powershell
+cd C:\Users\arlen\Documents\Codex\2026-05-30\TipsFitExpress
+node scripts\dev-server.mjs
 ```
 
-Luego se abre un Pull Request hacia `develop`.
-
-## Vista local
-
-Este proyecto no necesita build. Para verlo con servidor local:
-
-```bash
-node scripts/dev-server.mjs
-```
-
-Luego abre:
+Luego abrir:
 
 ```text
 http://localhost:5500
 ```
 
-Tambien puedes usar la extension Live Server de Cursor/VS Code.
+La terminal debe quedar abierta mientras se revisa la pagina.
 
-## Pendientes antes de vender
+## Como editar
 
-- Reemplazar los links placeholder de pago en `src/js/config.js`.
-- Pegar Meta Pixel y TikTok Pixel en el `<head>` de `index.html` cuando esten listos.
-- Cambiar testimonios y metricas estimadas por datos reales.
+- Textos y estructura: `index.html`.
+- Estilos, responsive y componentes visuales: `src/css/styles.css`.
+- Imagenes de la landing: `assets/landing/`.
+- Documentacion de decisiones: `docs/`.
+
+## Pendientes antes de publicar
+
+- Reemplazar el checkout pendiente por el link real de pago.
+- Reemplazar WhatsApp pendiente por el numero real.
+- Reemplazar redes sociales pendientes por URLs reales.
+- Definir precio, moneda y politica de devolucion visibles.
+- Agregar URL canonical cuando exista dominio final.
+- Agregar Meta Pixel y TikTok Pixel solo cuando esten configurados.
+- Crear o enlazar politicas legales: privacidad, terminos y reembolsos.
+- Optimizar imagenes grandes a WebP/AVIF manteniendo calidad visual.
+
+## Archivos eliminados
+
+Se eliminaron archivos no usados por la version actual:
+
+- `src/js/app.js`
+- `src/js/config.js`
+- `src/js/i18n.js`
+- imagenes antiguas en `assets/images/`
+- capturas `capture-*.png`
+- perfiles temporales `tmp-chrome-profile*/`
+
+Git conserva el historial de esos archivos.
+
+## Checklist rapido
+
+- Abrir `index.html`.
+- Revisar mobile en 390, 412 y 430 px.
+- Revisar desktop en 1366, 1920 y 2560 px.
+- Confirmar que el footer verde se ve completo.
+- Confirmar que no hay scroll horizontal.
+- Confirmar que el FAQ abre/cierra.
+- Confirmar que todos los placeholders comerciales fueron reemplazados antes de vender.

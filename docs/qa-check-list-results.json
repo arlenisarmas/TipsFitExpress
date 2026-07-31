@@ -1,0 +1,478 @@
+[
+  {
+    "label": "mobile-360x640",
+    "width": 360,
+    "height": 640,
+    "checkListCount": 6,
+    "checkItemCount": 21,
+    "nakedLists": 0,
+    "horizontalOverflow": false,
+    "allItemsGrid": true,
+    "allMarkersChecks": true,
+    "allListStyleNone": true,
+    "sampleItems": [
+      {
+        "text": "Fácil de seguir",
+        "display": "grid",
+        "columns": "24px 288px",
+        "marker": "\"✓\"",
+        "markerBg": "rgb(120, 163, 77)",
+        "markerColor": "rgb(255, 255, 255)",
+        "listStyle": "none"
+      },
+      {
+        "text": "Comidas reales",
+        "display": "grid",
+        "columns": "24px 288px",
+        "marker": "\"✓\"",
+        "markerBg": "rgb(120, 163, 77)",
+        "markerColor": "rgb(255, 255, 255)",
+        "listStyle": "none"
+      },
+      {
+        "text": "Ideal para mujeres con poco tiempo",
+        "display": "grid",
+        "columns": "24px 288px",
+        "marker": "\"✓\"",
+        "markerBg": "rgb(120, 163, 77)",
+        "markerColor": "rgb(255, 255, 255)",
+        "listStyle": "none"
+      },
+      {
+        "text": "30 días de menús listos para seguir",
+        "display": "grid",
+        "columns": "18px 140.325px",
+        "marker": "\"✓\"",
+        "markerBg": "rgb(120, 163, 77)",
+        "markerColor": "rgb(255, 255, 255)",
+        "listStyle": "none"
+      },
+      {
+        "text": "Ideas de desayuno, almuerzo, merienda y cena",
+        "display": "grid",
+        "columns": "18px 140.325px",
+        "marker": "\"✓\"",
+        "markerBg": "rgb(120, 163, 77)",
+        "markerColor": "rgb(255, 255, 255)",
+        "listStyle": "none"
+      },
+      {
+        "text": "Comidas prácticas, ricas y saciantes",
+        "display": "grid",
+        "columns": "18px 140.325px",
+        "marker": "\"✓\"",
+        "markerBg": "rgb(120, 163, 77)",
+        "markerColor": "rgb(255, 255, 255)",
+        "listStyle": "none"
+      }
+    ]
+  },
+  {
+    "label": "mobile-390x844",
+    "width": 390,
+    "height": 844,
+    "checkListCount": 6,
+    "checkItemCount": 21,
+    "nakedLists": 0,
+    "horizontalOverflow": false,
+    "allItemsGrid": true,
+    "allMarkersChecks": true,
+    "allListStyleNone": true,
+    "sampleItems": [
+      {
+        "text": "Fácil de seguir",
+        "display": "grid",
+        "columns": "24px 318.4px",
+        "marker": "\"✓\"",
+        "markerBg": "rgb(120, 163, 77)",
+        "markerColor": "rgb(255, 255, 255)",
+        "listStyle": "none"
+      },
+      {
+        "text": "Comidas reales",
+        "display": "grid",
+        "columns": "24px 318.4px",
+        "marker": "\"✓\"",
+        "markerBg": "rgb(120, 163, 77)",
+        "markerColor": "rgb(255, 255, 255)",
+        "listStyle": "none"
+      },
+      {
+        "text": "Ideal para mujeres con poco tiempo",
+        "display": "grid",
+        "columns": "24px 318.4px",
+        "marker": "\"✓\"",
+        "markerBg": "rgb(120, 163, 77)",
+        "markerColor": "rgb(255, 255, 255)",
+        "listStyle": "none"
+      },
+      {
+        "text": "30 días de menús listos para seguir",
+        "display": "grid",
+        "columns": "18px 157.962px",
+        "marker": "\"✓\"",
+        "markerBg": "rgb(120, 163, 77)",
+        "markerColor": "rgb(255, 255, 255)",
+        "listStyle": "none"
+      },
+      {
+        "text": "Ideas de desayuno, almuerzo, merienda y cena",
+        "display": "grid",
+        "columns": "18px 157.962px",
+        "marker": "\"✓\"",
+        "markerBg": "rgb(120, 163, 77)",
+        "markerColor": "rgb(255, 255, 255)",
+        "listStyle": "none"
+      },
+      {
+        "text": "Comidas prácticas, ricas y saciantes",
+        "display": "grid",
+        "columns": "18px 157.962px",
+        "marker": "\"✓\"",
+        "markerBg": "rgb(120, 163, 77)",
+        "markerColor": "rgb(255, 255, 255)",
+        "listStyle": "none"
+      }
+    ]
+  },
+  {
+    "label": "mobile-412x915",
+    "width": 412,
+    "height": 915,
+    "checkListCount": 6,
+    "checkItemCount": 21,
+    "nakedLists": 0,
+    "horizontalOverflow": false,
+    "allItemsGrid": true,
+    "allMarkersChecks": true,
+    "allListStyleNone": true,
+    "sampleItems": [
+      {
+        "text": "Fácil de seguir",
+        "display": "grid",
+        "columns": "24px 340px",
+        "marker": "\"✓\"",
+        "markerBg": "rgb(120, 163, 77)",
+        "markerColor": "rgb(255, 255, 255)",
+        "listStyle": "none"
+      },
+      {
+        "text": "Comidas reales",
+        "display": "grid",
+        "columns": "24px 340px",
+        "marker": "\"✓\"",
+        "markerBg": "rgb(120, 163, 77)",
+        "markerColor": "rgb(255, 255, 255)",
+        "listStyle": "none"
+      },
+      {
+        "text": "Ideal para mujeres con poco tiempo",
+        "display": "grid",
+        "columns": "24px 340px",
+        "marker": "\"✓\"",
+        "markerBg": "rgb(120, 163, 77)",
+        "markerColor": "rgb(255, 255, 255)",
+        "listStyle": "none"
+      },
+      {
+        "text": "30 días de menús listos para seguir",
+        "display": "grid",
+        "columns": "18px 170.488px",
+        "marker": "\"✓\"",
+        "markerBg": "rgb(120, 163, 77)",
+        "markerColor": "rgb(255, 255, 255)",
+        "listStyle": "none"
+      },
+      {
+        "text": "Ideas de desayuno, almuerzo, merienda y cena",
+        "display": "grid",
+        "columns": "18px 170.488px",
+        "marker": "\"✓\"",
+        "markerBg": "rgb(120, 163, 77)",
+        "markerColor": "rgb(255, 255, 255)",
+        "listStyle": "none"
+      },
+      {
+        "text": "Comidas prácticas, ricas y saciantes",
+        "display": "grid",
+        "columns": "18px 170.488px",
+        "marker": "\"✓\"",
+        "markerBg": "rgb(120, 163, 77)",
+        "markerColor": "rgb(255, 255, 255)",
+        "listStyle": "none"
+      }
+    ]
+  },
+  {
+    "label": "mobile-430x932",
+    "width": 430,
+    "height": 932,
+    "checkListCount": 6,
+    "checkItemCount": 21,
+    "nakedLists": 0,
+    "horizontalOverflow": false,
+    "allItemsGrid": true,
+    "allMarkersChecks": true,
+    "allListStyleNone": true,
+    "sampleItems": [
+      {
+        "text": "Fácil de seguir",
+        "display": "grid",
+        "columns": "24px 358.4px",
+        "marker": "\"✓\"",
+        "markerBg": "rgb(120, 163, 77)",
+        "markerColor": "rgb(255, 255, 255)",
+        "listStyle": "none"
+      },
+      {
+        "text": "Comidas reales",
+        "display": "grid",
+        "columns": "24px 358.4px",
+        "marker": "\"✓\"",
+        "markerBg": "rgb(120, 163, 77)",
+        "markerColor": "rgb(255, 255, 255)",
+        "listStyle": "none"
+      },
+      {
+        "text": "Ideal para mujeres con poco tiempo",
+        "display": "grid",
+        "columns": "24px 358.4px",
+        "marker": "\"✓\"",
+        "markerBg": "rgb(120, 163, 77)",
+        "markerColor": "rgb(255, 255, 255)",
+        "listStyle": "none"
+      },
+      {
+        "text": "30 días de menús listos para seguir",
+        "display": "grid",
+        "columns": "18px 181.163px",
+        "marker": "\"✓\"",
+        "markerBg": "rgb(120, 163, 77)",
+        "markerColor": "rgb(255, 255, 255)",
+        "listStyle": "none"
+      },
+      {
+        "text": "Ideas de desayuno, almuerzo, merienda y cena",
+        "display": "grid",
+        "columns": "18px 181.163px",
+        "marker": "\"✓\"",
+        "markerBg": "rgb(120, 163, 77)",
+        "markerColor": "rgb(255, 255, 255)",
+        "listStyle": "none"
+      },
+      {
+        "text": "Comidas prácticas, ricas y saciantes",
+        "display": "grid",
+        "columns": "18px 181.163px",
+        "marker": "\"✓\"",
+        "markerBg": "rgb(120, 163, 77)",
+        "markerColor": "rgb(255, 255, 255)",
+        "listStyle": "none"
+      }
+    ]
+  },
+  {
+    "label": "tablet-768x1024",
+    "width": 768,
+    "height": 1024,
+    "checkListCount": 6,
+    "checkItemCount": 21,
+    "nakedLists": 0,
+    "horizontalOverflow": false,
+    "allItemsGrid": true,
+    "allMarkersChecks": true,
+    "allListStyleNone": true,
+    "sampleItems": [
+      {
+        "text": "Fácil de seguir",
+        "display": "grid",
+        "columns": "18px 685.6px",
+        "marker": "\"✓\"",
+        "markerBg": "rgb(120, 163, 77)",
+        "markerColor": "rgb(255, 255, 255)",
+        "listStyle": "none"
+      },
+      {
+        "text": "Comidas reales",
+        "display": "grid",
+        "columns": "18px 685.6px",
+        "marker": "\"✓\"",
+        "markerBg": "rgb(120, 163, 77)",
+        "markerColor": "rgb(255, 255, 255)",
+        "listStyle": "none"
+      },
+      {
+        "text": "Ideal para mujeres con poco tiempo",
+        "display": "grid",
+        "columns": "18px 685.6px",
+        "marker": "\"✓\"",
+        "markerBg": "rgb(120, 163, 77)",
+        "markerColor": "rgb(255, 255, 255)",
+        "listStyle": "none"
+      },
+      {
+        "text": "30 días de menús listos para seguir",
+        "display": "grid",
+        "columns": "22px 278.487px",
+        "marker": "\"✓\"",
+        "markerBg": "rgb(120, 163, 77)",
+        "markerColor": "rgb(255, 255, 255)",
+        "listStyle": "none"
+      },
+      {
+        "text": "Ideas de desayuno, almuerzo, merienda y cena",
+        "display": "grid",
+        "columns": "22px 278.487px",
+        "marker": "\"✓\"",
+        "markerBg": "rgb(120, 163, 77)",
+        "markerColor": "rgb(255, 255, 255)",
+        "listStyle": "none"
+      },
+      {
+        "text": "Comidas prácticas, ricas y saciantes",
+        "display": "grid",
+        "columns": "22px 278.487px",
+        "marker": "\"✓\"",
+        "markerBg": "rgb(120, 163, 77)",
+        "markerColor": "rgb(255, 255, 255)",
+        "listStyle": "none"
+      }
+    ]
+  },
+  {
+    "label": "desktop-1366x768",
+    "width": 1366,
+    "height": 768,
+    "checkListCount": 6,
+    "checkItemCount": 21,
+    "nakedLists": 0,
+    "horizontalOverflow": false,
+    "allItemsGrid": true,
+    "allMarkersChecks": true,
+    "allListStyleNone": true,
+    "sampleItems": [
+      {
+        "text": "Fácil de seguir",
+        "display": "grid",
+        "columns": "22px 294.9px",
+        "marker": "\"✓\"",
+        "markerBg": "rgb(120, 163, 77)",
+        "markerColor": "rgb(255, 255, 255)",
+        "listStyle": "none"
+      },
+      {
+        "text": "Comidas reales",
+        "display": "grid",
+        "columns": "22px 294.9px",
+        "marker": "\"✓\"",
+        "markerBg": "rgb(120, 163, 77)",
+        "markerColor": "rgb(255, 255, 255)",
+        "listStyle": "none"
+      },
+      {
+        "text": "Ideal para mujeres con poco tiempo",
+        "display": "grid",
+        "columns": "22px 294.9px",
+        "marker": "\"✓\"",
+        "markerBg": "rgb(120, 163, 77)",
+        "markerColor": "rgb(255, 255, 255)",
+        "listStyle": "none"
+      },
+      {
+        "text": "30 días de menús listos para seguir",
+        "display": "grid",
+        "columns": "22px 607.6px",
+        "marker": "\"✓\"",
+        "markerBg": "rgb(120, 163, 77)",
+        "markerColor": "rgb(255, 255, 255)",
+        "listStyle": "none"
+      },
+      {
+        "text": "Ideas de desayuno, almuerzo, merienda y cena",
+        "display": "grid",
+        "columns": "22px 607.6px",
+        "marker": "\"✓\"",
+        "markerBg": "rgb(120, 163, 77)",
+        "markerColor": "rgb(255, 255, 255)",
+        "listStyle": "none"
+      },
+      {
+        "text": "Comidas prácticas, ricas y saciantes",
+        "display": "grid",
+        "columns": "22px 607.6px",
+        "marker": "\"✓\"",
+        "markerBg": "rgb(120, 163, 77)",
+        "markerColor": "rgb(255, 255, 255)",
+        "listStyle": "none"
+      }
+    ]
+  },
+  {
+    "label": "desktop-1920x1080",
+    "width": 1920,
+    "height": 1080,
+    "checkListCount": 6,
+    "checkItemCount": 21,
+    "nakedLists": 0,
+    "horizontalOverflow": false,
+    "allItemsGrid": true,
+    "allMarkersChecks": true,
+    "allListStyleNone": true,
+    "sampleItems": [
+      {
+        "text": "Fácil de seguir",
+        "display": "grid",
+        "columns": "22px 336.188px",
+        "marker": "\"✓\"",
+        "markerBg": "rgb(120, 163, 77)",
+        "markerColor": "rgb(255, 255, 255)",
+        "listStyle": "none"
+      },
+      {
+        "text": "Comidas reales",
+        "display": "grid",
+        "columns": "22px 336.188px",
+        "marker": "\"✓\"",
+        "markerBg": "rgb(120, 163, 77)",
+        "markerColor": "rgb(255, 255, 255)",
+        "listStyle": "none"
+      },
+      {
+        "text": "Ideal para mujeres con poco tiempo",
+        "display": "grid",
+        "columns": "22px 336.188px",
+        "marker": "\"✓\"",
+        "markerBg": "rgb(120, 163, 77)",
+        "markerColor": "rgb(255, 255, 255)",
+        "listStyle": "none"
+      },
+      {
+        "text": "30 días de menús listos para seguir",
+        "display": "grid",
+        "columns": "22px 657.588px",
+        "marker": "\"✓\"",
+        "markerBg": "rgb(120, 163, 77)",
+        "markerColor": "rgb(255, 255, 255)",
+        "listStyle": "none"
+      },
+      {
+        "text": "Ideas de desayuno, almuerzo, merienda y cena",
+        "display": "grid",
+        "columns": "22px 657.588px",
+        "marker": "\"✓\"",
+        "markerBg": "rgb(120, 163, 77)",
+        "markerColor": "rgb(255, 255, 255)",
+        "listStyle": "none"
+      },
+      {
+        "text": "Comidas prácticas, ricas y saciantes",
+        "display": "grid",
+        "columns": "22px 657.588px",
+        "marker": "\"✓\"",
+        "markerBg": "rgb(120, 163, 77)",
+        "markerColor": "rgb(255, 255, 255)",
+        "listStyle": "none"
+      }
+    ]
+  }
+]

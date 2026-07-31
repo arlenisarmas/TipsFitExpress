@@ -3,3 +3,10 @@ node_modules/
 dist/
 .DS_Store
 Thumbs.db
+*.log
+capture-*.png
+qa-screens/
+tmp-chrome-profile*/
+.tmp-qa-chrome*/
+server-out.log
+server-err.log
