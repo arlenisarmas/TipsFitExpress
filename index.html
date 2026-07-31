@@ -1,434 +1,425 @@
 <!doctype html>
 <html lang="es">
   <head>
-    <!--
-      CABECERA TECNICA DEL DOCUMENTO
-      Aqui van datos que el navegador y Google leen:
-      - Titulo de la pagina.
-      - Descripcion para SEO.
-      - Fuente tipografica.
-      - Archivo de estilos src/css/styles.css.
-      - Espacios para pegar Meta Pixel y TikTok Pixel cuando hagamos anuncios.
-    -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>TipFit Express | Menu Mensual Fit</title>
-    <meta
-      name="description"
-      content="Menu mensual fit + bonos para organizar tus comidas desde el celular sin improvisar."
-    >
+    <title>TipsFitExpress | Menú Mensual para bajar de peso</title>
+    <meta name="description" content="Menú mensual para bajar de peso comiendo rico y sin complicarte. Incluye 3 bonos gratis.">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#244b23">
+    <link rel="canonical" href="https://www.tipsfitexpress.store/">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.tipsfitexpress.store/">
+    <meta property="og:title" content="TipsFitExpress | Menú Mensual para bajar de peso">
+    <meta property="og:description" content="30 días de menús prácticos para organizar tus comidas, comer rico y dejar de improvisar.">
+    <meta property="og:image" content="assets/landing/01_hero_composicion_premium.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="TipsFitExpress | Menú Mensual para bajar de peso">
+    <meta name="twitter:description" content="Menú mensual digital con 3 bonos gratis y acceso inmediato.">
+    <link rel="icon" href="assets/landing/14_logo_footer.png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    >
-    <link rel="stylesheet" href="src/css/styles.css">
-
-    <!-- Meta Pixel: pega aqui el codigo completo de Meta cuando lo tengas. -->
-    <!-- TikTok Pixel: pega aqui el codigo completo de TikTok cuando lo tengas. -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/styles.css?v=20260727-footer-hover-2">
   </head>
   <body>
-    <!--
-      HEADER / MENU SUPERIOR
-      Esta es la barra de arriba.
-      Aqui puedes cambiar:
-      - Nombre de la marca.
-      - Selector de idioma.
-      - Boton "Ver oferta".
-    -->
-    <header class="site-header">
-      <a class="brand" href="#top" aria-label="TipFit Express inicio">
-        <img class="brand-mark" src="assets/images/tipsfit-logo.png" alt="" aria-hidden="true">
-        <span>TipFit Express</span>
-      </a>
-      <div class="header-actions">
-        <select class="locale-select" id="languageSelect" aria-label="Idioma">
-          <option value="es">ES</option>
-          <option value="en">EN</option>
-          <option value="pt">PT</option>
-        </select>
-        <a class="header-cta" href="#oferta" data-i18n="navOffer">Ver oferta</a>
+    <div class="landing-container">
+      <div class="announcement" aria-label="Oferta de hoy">
+        <div class="announcement__track">
+          <div class="announcement__group">
+            <span>🔥 OFERTA DE HOY</span>
+            <span>3 BONOS GRATIS</span>
+            <span>ACCESO INMEDIATO</span>
+            <span>TIPSFITEXPRESS 🎁</span>
+          </div>
+          <div class="announcement__group">
+            <span>🔥 OFERTA DE HOY</span>
+            <span>3 BONOS GRATIS</span>
+            <span>ACCESO INMEDIATO</span>
+            <span>TIPSFITEXPRESS 🎁</span>
+          </div>
+          <div class="announcement__group" aria-hidden="true">
+            <span>🔥 OFERTA DE HOY</span>
+            <span>3 BONOS GRATIS</span>
+            <span>ACCESO INMEDIATO</span>
+            <span>TIPSFITEXPRESS 🎁</span>
+          </div>
+          <div class="announcement__group" aria-hidden="true">
+            <span>🔥 OFERTA DE HOY</span>
+            <span>3 BONOS GRATIS</span>
+            <span>ACCESO INMEDIATO</span>
+            <span>TIPSFITEXPRESS 🎁</span>
+          </div>
+        </div>
       </div>
-    </header>
 
-    <main id="top">
-      <!--
-        HERO / PRIMERA PANTALLA
-        Esta es la parte mas importante de la landing.
-        Es lo primero que ve una persona que llega desde Instagram, Facebook o TikTok.
-        Aqui se vende la idea principal:
-        - Problema: dejar de improvisar comidas.
-        - Solucion: menu mensual fit + bonos.
-        - Precio.
-        - Boton principal de compra.
-        - Imagen visual del producto.
-      -->
-      <section class="hero">
-        <div class="hero-copy">
-          <div class="eyebrow">
-            <span class="live-dot"></span>
-            <span data-i18n="eyebrow">Oferta digital con acceso inmediato</span>
-          </div>
-          <h1 data-i18n="heroTitle">Deja de improvisar tus comidas</h1>
-          <p class="hero-subtitle" data-i18n="heroSubtitle">
-            Recibe un menu mensual fit + 4 bonos para organizarte desde hoy,
-            comprar mejor y saber que preparar sin pensar todo desde cero.
-          </p>
-
-          <div class="price-row" aria-label="Precio de oferta">
-            <div>
-              <span class="price-label" data-i18n="today">Hoy</span>
-              <strong>$9.99</strong>
+      <main>
+        <section class="hero" id="top">
+          <div class="hero-content">
+            <div class="hero-copy">
+              <p class="eyebrow">Menú mensual para bajar de peso</p>
+              <h1 class="hero-title">
+                <span>Baja de peso</span>
+                <span>comiendo rico</span>
+                <span>y sin complicarte</span>
+              </h1>
+              <p class="hero-text">30 días de menús prácticos para mujeres ocupadas que quieren organizar sus comidas, sentirse más livianas y dejar de improvisar.</p>
+              <ul class="check-list hero-checks">
+                <li>Fácil de seguir</li>
+                <li>Comidas reales</li>
+                <li>Ideal para mujeres con poco tiempo</li>
+              </ul>
+              <div class="hero-offer">
+                <p class="hero-offer__label">Precio especial de lanzamiento</p>
+                <strong>US$ 9,99</strong>
+                <p class="hero-offer__details">Pago único • Acceso inmediato<br>Ebook principal + 3 bonos incluidos</p>
+                <a class="button hero-offer__button" href="https://pay.hotmart.com/D106960027E?off=g5adq4pe&sck=tipsfit_landing" data-hotmart-checkout>Quiero mi menú ahora</a>
+                <p class="access-note hero-offer__note">Acceso digital inmediato</p>
+              </div>
             </div>
-            <span class="old-price" data-i18n="oldPrice">Antes $29.99</span>
-            <span class="save-badge" data-i18n="save">Ahorras 67%</span>
+            <div class="hero-visual">
+              <img
+                src="assets/landing/01_hero_composicion_premium.png"
+                sizes="(max-width: 767px) 100vw, 50vw"
+                alt="Menú Mensual para bajar de peso acompañado de comidas saludables"
+                width="1023"
+                height="1537"
+                fetchpriority="high"
+                decoding="async">
+            </div>
           </div>
+        </section>
 
-          <a class="primary-button" href="#pagos" data-i18n="mainCta">
-            Quiero mi menu ahora
+        <section class="problems">
+          <h2>Sabemos lo difícil que es cuidar de ti cuando tienes mil cosas por hacer</h2>
+          <div class="problem-grid">
+            <article class="selectable-card" tabindex="0" role="button" aria-pressed="false"><span class="icon pot"></span><p>No sabes qué cocinar cada día</p></article>
+            <article class="selectable-card" tabindex="0" role="button" aria-pressed="false"><span class="icon face"></span><p>Llegas cansada y terminas comiendo cualquier cosa</p></article>
+            <article class="selectable-card" tabindex="0" role="button" aria-pressed="false"><span class="icon question">?</span><p>Quieres bajar de peso pero no sabes por dónde empezar</p></article>
+            <article class="selectable-card" tabindex="0" role="button" aria-pressed="false"><span class="icon utensils"></span><p>Te cuesta organizar tus comidas y porciones</p></article>
+          </div>
+          <p class="transition-note">Por eso creamos una guía simple que te ahorra tiempo<br>y te ayuda a comer mejor.</p>
+        </section>
+
+        <section class="includes selectable-card" tabindex="0" role="button" aria-pressed="false">
+          <div class="tablet-wrap">
+            <picture>
+              <source media="(max-width: 767px)" srcset="assets/landing/06_tablet_ebook_mobile_hires.png">
+              <img src="assets/landing/06_tablet_ebook.png" alt="Ebook Menú Mensual mostrado en una tablet" width="282" height="274" loading="lazy" decoding="async">
+            </picture>
+          </div>
+          <div class="includes-copy">
+            <h2>¿Qué incluye el ebook principal?</h2>
+            <ul class="check-list">
+              <li>30 días de menús listos para seguir</li>
+              <li>Ideas de desayuno, almuerzo, merienda y cena</li>
+              <li>Comidas prácticas, ricas y saciantes</li>
+              <li>Organización fácil para tu semana</li>
+              <li>Pensado para ayudarte a bajar de peso de forma realista</li>
+            </ul>
+            <p class="star-note">Perfecto para empezar sin dietas extremas</p>
+          </div>
+        </section>
+
+        <section class="bonuses">
+          <h2>Además, hoy recibes <span>3 BONOS</span> para que no tengas que hacerlo sola</h2>
+          <p class="bonus-intro">No solo te damos recetas: también tendrás herramientas para saber qué comer, cómo organizar tus porciones y qué hacer cuando aparezca el antojo.</p>
+          <div class="bonus-grid">
+            <article class="selectable-card" tabindex="0" role="button" aria-pressed="false">
+              <b>Bono 01</b>
+              <div class="bonus-card__media"><img src="assets/landing/07_bono_tabla_calorias_hires.png" sizes="(max-width: 767px) calc(100vw - 72px), 30vw" alt="Tabla de calorías y porciones" width="1568" height="1003" loading="lazy" decoding="async"></div>
+              <p class="bonus-hook">Deja de comer a ciegas</p>
+              <h3>Tabla de calorías y porciones</h3>
+              <p>Descubre qué elegir y cuánto servirte sin pasar horas buscando información.</p>
+              <ul class="check-list bonus-checks">
+                <li>Consulta rápidamente los alimentos que consumes.</li>
+                <li>Organiza platos con porciones más claras.</li>
+                <li>Toma decisiones sin prohibirte todo lo que te gusta.</li>
+              </ul>
+              <p class="bonus-price"><s>$7.990</s> <strong>Hoy GRATIS</strong></p>
+            </article>
+            <article class="selectable-card" tabindex="0" role="button" aria-pressed="false">
+              <b>Bono 02</b>
+              <div class="bonus-card__media"><img src="assets/landing/08_bono_calculadora_hires.png" sizes="(max-width: 767px) calc(100vw - 72px), 30vw" alt="Calculadora de calorías personalizada" width="1568" height="1003" loading="lazy" decoding="async"></div>
+              <p class="bonus-hook">Una referencia según tu realidad</p>
+              <h3>Calculadora de calorías personalizada</h3>
+              <p>Obtén una referencia sencilla para ordenar tus comidas según tus datos y tu objetivo.</p>
+              <ul class="check-list bonus-checks">
+                <li>Sigue el cálculo paso a paso, sin fórmulas difíciles.</li>
+                <li>Ten una referencia más clara de calorías y porciones.</li>
+                <li>Empieza con un objetivo más ordenado y realista.</li>
+              </ul>
+              <p class="bonus-price"><s>$5.990</s> <strong>Hoy GRATIS</strong></p>
+            </article>
+            <article class="selectable-card" tabindex="0" role="button" aria-pressed="false">
+              <b>Bono 03</b>
+              <div class="bonus-card__media"><img src="assets/landing/09_bono_postres_hires.png" sizes="(max-width: 767px) calc(100vw - 72px), 30vw" alt="Postres saludables para disfrutar" width="1568" height="1003" loading="lazy" decoding="async"></div>
+              <p class="bonus-hook">No abandones por un antojo</p>
+              <h3>Postres saludables para disfrutar</h3>
+              <p>Ten opciones ricas y fáciles para esos momentos en los que quieres algo dulce.</p>
+              <ul class="check-list bonus-checks">
+                <li>Prepara postres con ingredientes fáciles de conseguir.</li>
+                <li>Disfruta alternativas más livianas para la merienda.</li>
+                <li>Continúa con tu organización sin sentir que estás a dieta.</li>
+              </ul>
+              <p class="bonus-price"><s>$4.990</s> <strong>Hoy GRATIS</strong></p>
+            </article>
+          </div>
+        </section>
+
+        <section class="results">
+          <h2>Lo que vas a lograr con este pack</h2>
+          <div class="result-grid">
+            <article class="selectable-card" tabindex="0" role="button" aria-pressed="false"><span class="circle icon-clock" aria-hidden="true"></span><p>Ahorrar tiempo<br>cada semana</p></article>
+            <article class="selectable-card" tabindex="0" role="button" aria-pressed="false"><span class="circle icon-bowl" aria-hidden="true"></span><p>Comer más ordenado y consciente</p></article>
+            <article class="selectable-card" tabindex="0" role="button" aria-pressed="false"><span class="circle icon-list" aria-hidden="true"></span><p>Tener una guía clara para no improvisar</p></article>
+            <article class="selectable-card" tabindex="0" role="button" aria-pressed="false"><span class="circle icon-heart" aria-hidden="true"></span><p>Sentirte mejor contigo misma</p></article>
+          </div>
+          <p class="heart-note">No necesitas hacerlo perfecto. Solo necesitas una guía que te lo haga más fácil.</p>
+        </section>
+
+        <section class="testimonials">
+          <h2>Pensado para mujeres reales, con vidas reales</h2>
+          <div class="testimonial-grid">
+            <article class="selectable-card testimonial-card testimonial--laura" tabindex="0" role="button" aria-pressed="false">
+              <span class="testimonial-avatar"><img src="assets/testimonials/laura-avatar.png" alt="Laura" width="60" height="60" loading="lazy" decoding="async"></span>
+              <div><span>★★★★★</span><p>Por fin tengo ideas claras para toda la semana.</p><b>— Laura, 34 años</b></div>
+            </article>
+            <article class="selectable-card testimonial-card testimonial--andrea" tabindex="0" role="button" aria-pressed="false">
+              <span class="testimonial-avatar"><img src="assets/testimonials/andrea-avatar.png" alt="Andrea" width="60" height="60" loading="lazy" decoding="async"></span>
+              <div><span>★★★★★</span><p>Me ayudó a organizarme incluso trabajando todo el día.</p><b>— Andrea, 29 años</b></div>
+            </article>
+            <article class="selectable-card testimonial-card testimonial--camila" tabindex="0" role="button" aria-pressed="false">
+              <span class="testimonial-avatar"><img src="assets/testimonials/camila-avatar.png" alt="Camila" width="60" height="60" loading="lazy" decoding="async"></span>
+              <div><span>★★★★★</span><p>Los postres saludables me encantaron y me ayudaron a mantenerme constante.</p><b>— Camila, 37 años</b></div>
+            </article>
+          </div>
+        </section>
+
+        <section class="checkout-offer" aria-label="Resumen de la oferta">
+          <h2>Todo esto es tuyo hoy</h2>
+          <ul class="checkout-offer__list">
+            <li>Ebook Menú Mensual de 30 días</li>
+            <li>Tabla de calorías y porciones</li>
+            <li>Calculadora de calorías personalizada</li>
+            <li>Postres saludables</li>
+          </ul>
+          <p class="checkout-offer__label">Precio de lanzamiento</p>
+          <strong>US$ 9,99</strong>
+          <p class="checkout-offer__details">Un solo pago • Sin suscripciones<br>Acceso después de la confirmación del pago.</p>
+          <a class="button checkout-offer__button" href="https://pay.hotmart.com/D106960027E?off=g5adq4pe&sck=tipsfit_landing" data-hotmart-checkout>
+            <span>Sí, quiero acceder ahora</span>
+            <span aria-hidden="true">→</span>
           </a>
+          <p class="checkout-offer__guarantee">Ideal si quieres bajar de peso<br>sin dietas complicadas</p>
+        </section>
 
-          <div class="trust-row" aria-label="Beneficios de compra">
-            <span data-i18n="trust1">Acceso inmediato</span>
-            <span data-i18n="trust2">Pago seguro</span>
-            <span data-i18n="trust3">PDF mobile</span>
+        <section class="final-cta">
+          <div class="final-cta__media">
+            <img
+              src="assets/landing/13_plato_cta_final_hires.png"
+              sizes="(min-width: 1024px) 44vw, 100vw"
+              alt="Plato saludable"
+              width="1586"
+              height="992"
+              loading="lazy"
+              decoding="async">
           </div>
-        </div>
-
-        <div class="hero-media hero-media-image" aria-label="Producto TipFit Express">
-          <img class="hero-person" src="assets/images/tipfit-hero-woman-mint.png" alt="Mujer usando TipFit Express desde su celular">
-        </div>
-      </section>
-
-      <!--
-        FRANJA DE CONFIANZA / BENEFICIOS RAPIDOS
-        Esta franja muestra en pocas palabras que incluye el producto.
-        Sirve para que la persona entienda rapido que no compra solo un PDF.
-      -->
-      <section class="partner-strip" aria-label="Incluido en TipFit Express">
-        <span>Menu mensual</span>
-        <span>Lista de compras</span>
-        <span>Tabla de calorias</span>
-        <span>Postres fit</span>
-      </section>
-
-      <!--
-        BUSCADOR VISUAL
-        Este bloque es principalmente visual y de marketing.
-        Hace que la landing se sienta moderna, didactica y parecida a una plataforma.
-        No es un buscador real por ahora.
-      -->
-      <section class="quick-finder" aria-label="Busqueda rapida">
-        <p>Encuentra tu plan fit</p>
-        <form>
-          <input type="search" value="Menu mensual + bonos" aria-label="Buscar plan">
-          <button type="button">Buscar</button>
-        </form>
-      </section>
-
-      <!--
-        SECCION DE DOLOR
-        Aqui tocamos el problema emocional del publico:
-        - Empezar cada lunes.
-        - No saber que comer.
-        - Improvisar.
-        - Sentir que falta organizacion.
-        Esta parte ayuda a que la persona sienta "esto es para mi".
-      -->
-      <section class="pain-band">
-        <p class="section-kicker" data-i18n="painKicker">Para mujeres ocupadas</p>
-        <h2 data-i18n="painTitle">Si cada lunes vuelves a empezar...</h2>
-        <p data-i18n="painText">
-          No necesitas mas fuerza de voluntad. Necesitas un plan claro que te
-          diga que comer, que comprar y como ordenar tu semana desde el celular.
-        </p>
-      </section>
-
-      <!--
-        BENEFICIOS / QUE INCLUYE
-        Aqui explicamos el producto principal y los 4 bonos.
-        Cada tarjeta debe responder: "que recibo y por que me sirve".
-      -->
-      <section class="section">
-        <div class="section-heading">
-          <p class="section-kicker" data-i18n="bundleKicker">Bundle completo</p>
-          <h2 data-i18n="bundleTitle">Lo que recibes</h2>
-        </div>
-
-        <div class="benefit-grid">
-          <article class="benefit-card">
-            <span class="benefit-icon">01</span>
-            <h3 data-i18n="productTitle">Menu Mensual Fit</h3>
-            <p data-i18n="productText">Ideas de comidas organizadas para dejar de improvisar durante el mes.</p>
-          </article>
-          <article class="benefit-card">
-            <span class="benefit-icon">02</span>
-            <h3 data-i18n="bonus1Title">Lista de compras</h3>
-            <p data-i18n="bonus1Text">Compra con direccion y evita llenar el carrito con cosas que no necesitas.</p>
-          </article>
-          <article class="benefit-card">
-            <span class="benefit-icon">03</span>
-            <h3 data-i18n="bonus2Title">Ebook Lista de compras</h3>
-            <p data-i18n="bonus2Text">Un ebook simple para organizar tus compras fit antes de ir al mercado.</p>
-          </article>
-          <article class="benefit-card">
-            <span class="benefit-icon">04</span>
-            <h3 data-i18n="bonus3Title">Tabla de calorias</h3>
-            <p data-i18n="bonus3Text">Referencia simple por alimento para tomar mejores decisiones sin complicarte.</p>
-          </article>
-          <article class="benefit-card">
-            <span class="benefit-icon">05</span>
-            <h3 data-i18n="bonus4Title">Postres Fit + Recetas Fit</h3>
-            <p data-i18n="bonus4Text">Opciones dulces y comidas faciles para sostener el plan con gusto.</p>
-          </article>
-        </div>
-      </section>
-
-      <!--
-        TARJETAS DEL PRODUCTO
-        Seccion visual tipo catalogo.
-        Sirve para que el pack parezca mas completo y tenga mayor valor percibido.
-        Si despues agregamos mas productos, esta seccion se puede reutilizar.
-      -->
-      <section class="popular-section">
-        <div class="section-heading centered">
-          <p class="section-kicker">Oferta visual</p>
-          <h2>Tu pack fit listo para usar</h2>
-        </div>
-        <div class="product-card-grid">
-          <article class="mini-product-card featured">
-            <img src="assets/images/tipfit-bundle.png" alt="Pack Menu Mensual Fit">
-            <div>
-              <span>Pack completo</span>
-              <h3>Menu Mensual Fit</h3>
-              <p>Producto principal + todos los bonos.</p>
-              <strong>$9.99</strong>
+          <div class="final-cta__content">
+            <h2>Empieza hoy a comer mejor<br>y organizar tu mes</h2>
+            <div class="final-cta__body">
+              <ul class="check-list">
+                <li>Ebook Menú Mensual</li>
+                <li>Bono 1: Tabla de calorías</li>
+                <li>Bono 2: Calculadora de calorías personalizada</li>
+                <li>Bono 3: Postres saludables</li>
+              </ul>
+              <a class="button final-button final-cta__button" href="https://pay.hotmart.com/D106960027E?off=g5adq4pe&sck=tipsfit_landing" data-hotmart-checkout>
+                <span class="final-cta__button-text">Sí, quiero acceder</span>
+                <span class="final-cta__button-arrow">›</span>
+              </a>
+              <p class="shield-note final-cta__note"><span>Ideal si quieres bajar de peso<br>sin dietas complicadas</span></p>
             </div>
-          </article>
-          <article class="mini-product-card">
-            <div class="card-visual shopping"></div>
-            <div>
-              <span>Bono 1</span>
-              <h3>Lista de compras</h3>
-              <p>Compra rapido y sin improvisar.</p>
-            </div>
-          </article>
-          <article class="mini-product-card">
-            <div class="card-visual ebook"></div>
-            <div>
-              <span>Bono 2</span>
-              <h3>Ebook Lista de compras</h3>
-              <p>Guia simple para organizar el mercado.</p>
-            </div>
-          </article>
-          <article class="mini-product-card">
-            <div class="card-visual calories"></div>
-            <div>
-              <span>Bono 3</span>
-              <h3>Tabla de calorias</h3>
-              <p>Decisiones simples por alimento.</p>
-            </div>
-          </article>
-          <article class="mini-product-card">
-            <div class="card-visual dessert"></div>
-            <div>
-              <span>Bono 4</span>
-              <h3>Postres Fit + Recetas Fit</h3>
-              <p>Dulce y comidas faciles sin abandonar tu plan.</p>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <!--
-        VISTA PREVIA
-        Muestra de forma conceptual como se usaria el producto.
-        Ayuda a reducir dudas antes de comprar.
-      -->
-      <section class="preview-section">
-        <div class="section-heading">
-          <p class="section-kicker" data-i18n="previewKicker">Vista previa</p>
-          <h2 data-i18n="previewTitle">Abrelo desde el telefono y empieza hoy</h2>
-        </div>
-        <div class="phone-preview">
-          <div class="phone-card">
-            <span data-i18n="previewCard1Label">Semana 1</span>
-            <strong data-i18n="previewCard1">Desayuno, almuerzo, cena</strong>
           </div>
-          <div class="phone-card accent">
-            <span data-i18n="previewCard2Label">Compras</span>
-            <strong data-i18n="previewCard2">Lista ordenada por categoria</strong>
-          </div>
-          <div class="phone-card dark">
-            <span data-i18n="previewCard3Label">Bonus</span>
-            <strong data-i18n="previewCard3">Postres fit para antojos</strong>
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <!--
-        PRUEBA SOCIAL / TESTIMONIOS
-        Esta parte aumenta confianza.
-        Importante: cuando tengamos ventas reales, reemplazar estos textos por
-        testimonios y numeros reales.
-      -->
-      <section class="section proof-section">
-        <div class="stat-strip">
+        <section class="faq">
+          <h2>Preguntas frecuentes</h2>
+          <details>
+            <summary><span class="faq-icon" aria-hidden="true"></span><b>¿Cómo recibo el ebook y los tres bonos después de realizar la compra?</b></summary>
+            <p>Recibirás el acceso digital para descargar el ebook y los bonos después de completar la compra.</p>
+          </details>
+          <details>
+            <summary><span class="faq-icon" aria-hidden="true"></span><b>¿Necesito saber cocinar o preparar recetas complicadas para seguir el menú?</b></summary>
+            <p>No. Está pensado para comidas prácticas, claras y fáciles de adaptar a tu rutina.</p>
+          </details>
+          <details>
+            <summary><span class="faq-icon" aria-hidden="true"></span><b>¿Tengo que comprar ingredientes difíciles o productos especiales?</b></summary>
+            <p>No. La idea es ayudarte a organizarte con alimentos simples y fáciles de conseguir.</p>
+          </details>
+          <details>
+            <summary><span class="faq-icon" aria-hidden="true"></span><b>¿Puedo utilizar el menú si también cocino para mi pareja o mi familia?</b></summary>
+            <p>Sí. Puedes usar las ideas como base y ajustar porciones según las necesidades de cada persona.</p>
+          </details>
+          <details>
+            <summary><span class="faq-icon" aria-hidden="true"></span><b>¿El ebook es una dieta personalizada o reemplaza la consulta con un nutricionista?</b></summary>
+            <p>No. Es una guía digital de organización alimentaria y no reemplaza una evaluación profesional personalizada.</p>
+          </details>
+        </section>
+      </main>
+
+      <footer class="footer" id="footer">
+        <div class="footer-brand" aria-label="TipsFitExpress">
+          <svg class="footer-logo-mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+            <path d="M23.5 5.5C13.6 5.5 6 12.7 6 22.1c0 5.5 2.5 10.4 6.4 13.5l-.9 8.2 7.9-4.4c1.3.3 2.7.5 4.1.5 9.9 0 17.5-7.2 17.5-16.7S33.4 5.5 23.5 5.5Z"/>
+            <path d="M24 29.8s-7.5-4.5-7.5-10.1c0-2.7 1.8-4.8 4.2-4.8 1.5 0 2.7.8 3.3 2 .6-1.2 1.8-2 3.3-2 2.4 0 4.2 2.1 4.2 4.8 0 5.6-7.5 10.1-7.5 10.1Z"/>
+          </svg>
           <div>
-            <strong>+1.200</strong>
-            <span data-i18n="downloads">descargas estimadas</span>
-          </div>
-          <div>
-            <strong>4.8/5</strong>
-            <span data-i18n="rating">satisfaccion objetivo</span>
+            <strong>TipsFitExpress</strong>
+            <p>Hazlo simple. Hazlo por ti.</p>
           </div>
         </div>
-
-        <div class="testimonial-grid">
-          <article>
-            <p data-i18n="testimonial1">"Me ayudo a dejar de pensar todos los dias que cocinar."</p>
-            <span data-i18n="client">Cliente TipFit</span>
-          </article>
-          <article>
-            <p data-i18n="testimonial2">"Lo use desde el celular mientras hacia las compras."</p>
-            <span data-i18n="client">Cliente TipFit</span>
-          </article>
+        <div class="footer-action" id="checkout">
+          <a class="footer-button" href="https://pay.hotmart.com/D106960027E?off=g5adq4pe&sck=tipsfit_landing" data-hotmart-checkout>Quiero empezar por US$ 9,99 <span>→</span></a>
         </div>
-      </section>
-
-      <!--
-        OFERTA FINAL
-        Aqui se resume todo lo que la persona compra.
-        Debe ser claro:
-        - Que incluye.
-        - Precio.
-        - Garantia.
-        - Boton para ir a pagar.
-      -->
-      <section class="offer" id="oferta">
-        <p class="section-kicker" data-i18n="offerKicker">Oferta de lanzamiento</p>
-        <h2 data-i18n="offerTitle">Menu Mensual Fit + 4 bonos</h2>
-        <ul class="offer-list">
-          <li data-i18n="offerItem1">Menu mensual en PDF mobile</li>
-          <li data-i18n="offerItem2">Lista de compras</li>
-          <li data-i18n="offerItem3">Ebook Lista de compras</li>
-          <li data-i18n="offerItem4">Tabla de calorias por alimento</li>
-          <li data-i18n="offerItem5">Postres Fit + Recetas Fit</li>
-          <li data-i18n="offerItem6">Acceso inmediato despues del pago</li>
-        </ul>
-        <div class="offer-price">
-          <span data-i18n="finalPrice">Precio final hoy</span>
-          <strong>$9.99</strong>
-          <em data-i18n="guarantee">Garantia 7 dias</em>
-        </div>
-        <a class="primary-button" href="#pagos" data-i18n="buyPrice">
-          Comprar por $9.99
-        </a>
-      </section>
-
-      <!--
-        PAGOS / CHECKOUT INTELIGENTE
-        Aqui mostramos los metodos de pago disponibles.
-        La logica esta en src/js/app.js:
-        - Detecta pais por IP.
-        - Permite cambiar pais manualmente.
-        - Muestra solo los metodos disponibles para ese pais.
-        Los links reales de pago se cambian en src/js/config.js.
-      -->
-      <section class="section payment-section" id="pagos">
-        <div class="section-heading">
-          <p class="section-kicker" data-i18n="paymentKicker">Checkout inteligente</p>
-          <h2 data-i18n="paymentTitle">Elige como quieres pagar</h2>
-          <p data-i18n="paymentText">
-            Detectamos tu pais para mostrar metodos disponibles. Si usas VPN o la ubicacion falla,
-            puedes cambiar el pais manualmente.
-          </p>
-        </div>
-
-        <div class="geo-controls">
-          <div>
-            <span data-i18n="detected">Pais detectado</span>
-            <strong id="countryLabel">Detectando...</strong>
-          </div>
-          <label>
-            <span data-i18n="changeCountry">Cambiar pais</span>
-            <select id="countrySelect" aria-label="Pais">
-            </select>
-          </label>
-        </div>
-
-        <div class="payment-grid" id="paymentGrid">
-          <article class="payment-card" data-provider="mercadopago">
-            <span>LATAM</span>
-            <h3>Mercado Pago</h3>
-            <p data-i18n="mpText">Ideal si estas en paises de Latinoamerica donde Mercado Pago opera.</p>
-            <a class="js-buy" href="#">Pagar con Mercado Pago</a>
-          </article>
-          <article class="payment-card" data-provider="paypal">
-            <span>GLOBAL</span>
-            <h3>PayPal</h3>
-            <p data-i18n="paypalText">Opcion internacional para clientes que prefieren pagar con PayPal.</p>
-            <a class="js-buy" href="#">Pagar con PayPal</a>
-          </article>
-          <article class="payment-card" data-provider="stripe">
-            <span>CARDS</span>
-            <h3>Stripe</h3>
-            <p data-i18n="stripeText">Tarjetas y wallets en paises habilitados para checkout internacional.</p>
-            <a class="js-buy" href="#">Pagar con tarjeta</a>
-          </article>
-          <article class="payment-card" data-provider="lemonsqueezy">
-            <span>DIGITAL</span>
-            <h3>Lemon Squeezy</h3>
-            <p data-i18n="lemonText">Muy util para productos digitales, impuestos y ventas internacionales.</p>
-            <a class="js-buy" href="#">Pagar internacional</a>
-          </article>
-        </div>
-      </section>
-
-      <!--
-        PREGUNTAS FRECUENTES
-        Sirve para responder objeciones antes de comprar.
-        Ejemplos:
-        - Como recibo el producto.
-        - Si necesito experiencia.
-        - Si sirve para personas con poco tiempo.
-      -->
-      <section class="section faq">
-        <div class="section-heading">
-          <p class="section-kicker" data-i18n="faqKicker">Preguntas frecuentes</p>
-          <h2 data-i18n="faqTitle">Antes de comprar</h2>
-        </div>
-        <details open>
-          <summary data-i18n="faq1Q">Como recibo el menu?</summary>
-          <p data-i18n="faq1A">Despues del pago recibes el acceso al PDF y los bonos en la pagina de gracias o por email.</p>
-        </details>
-        <details>
-          <summary data-i18n="faq2Q">Necesito experiencia cocinando?</summary>
-          <p data-i18n="faq2A">No. La idea es que sea simple, practico y facil de seguir desde tu telefono.</p>
-        </details>
-        <details>
-          <summary data-i18n="faq3Q">Sirve si tengo poco tiempo?</summary>
-          <p data-i18n="faq3A">Si. La landing esta pensada para vender una solucion de organizacion rapida, no una dieta complicada.</p>
-        </details>
-      </section>
-    </main>
-
-    <!--
-      BOTON FIJO INFERIOR
-      Este boton queda siempre visible abajo.
-      Es importante para mobile porque la persona puede comprar sin volver arriba.
-    -->
-    <nav class="sticky-buy" aria-label="Compra rapida">
-      <div>
-        <span data-i18n="stickyProduct">Menu + 4 bonos</span>
-        <strong>$9.99</strong>
+        <nav class="footer-social" aria-label="Redes sociales de TipsFitExpress">
+          <a href="https://www.instagram.com/tipsfitexpress/" target="_blank" rel="noopener noreferrer" aria-label="Instagram de TipsFitExpress"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.8 2h8.4A5.8 5.8 0 0 1 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8A5.8 5.8 0 0 1 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2Zm0 2A3.8 3.8 0 0 0 4 7.8v8.4A3.8 3.8 0 0 0 7.8 20h8.4a3.8 3.8 0 0 0 3.8-3.8V7.8A3.8 3.8 0 0 0 16.2 4H7.8Zm4.2 3.2A4.8 4.8 0 1 1 7.2 12 4.8 4.8 0 0 1 12 7.2Zm0 2A2.8 2.8 0 1 0 14.8 12 2.8 2.8 0 0 0 12 9.2Zm5.05-2.55a1.15 1.15 0 1 1-1.15 1.15 1.15 1.15 0 0 1 1.15-1.15Z"/></svg></a>
+          <a href="https://www.facebook.com/profile.php?id=61587554694895" target="_blank" rel="noopener noreferrer" aria-label="Facebook de TipsFitExpress"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8.1V6.4c0-.8.3-1.2 1.3-1.2h1.8V2.1C16.2 2 15.3 2 14.4 2 11.7 2 10 3.6 10 6.1v2H7v3.5h3V22h3.7V11.6h3l.5-3.5H14Z"/></svg></a>
+          <a href="https://www.tiktok.com/@tipsfitexpress" target="_blank" rel="noopener noreferrer" aria-label="TikTok de TipsFitExpress"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.7 2c.3 2.2 1.6 3.7 3.8 3.9v3.4a7.5 7.5 0 0 1-3.8-1.1v6.6A6.2 6.2 0 1 1 10.5 8.6c.4 0 .8 0 1.1.1v3.6a2.7 2.7 0 1 0 1.5 2.4V2h3.6Z"/></svg></a>
+        </nav>
+        <p class="footer-legal">Contenido educativo e informativo. No reemplaza una evaluación médica o nutricional profesional.</p>
+      </footer>
+      <div class="floating-actions" aria-label="Acciones rápidas">
+        <a class="floating-action floating-action--whatsapp is-pending" href="#checkout" aria-disabled="true" data-pending="whatsapp" aria-label="WhatsApp pendiente de conectar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2a9.86 9.86 0 0 0-8.43 14.96L2.2 22l5.17-1.36A9.92 9.92 0 1 0 12.04 2Zm0 2a7.9 7.9 0 0 1 6.71 12.07 7.85 7.85 0 0 1-9.9 2.78l-.36-.18-3.06.8.82-2.98-.2-.38A7.86 7.86 0 0 1 12.04 4Zm-3.35 3.93c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.09s.9 2.42 1.03 2.59c.13.17 1.76 2.69 4.27 3.77 2.11.91 2.54.73 3 .68.46-.04 1.48-.6 1.69-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.16-.48-.29l-1.69-.82c-.25-.13-.44-.19-.62.09-.19.27-.72.91-.88 1.1-.16.19-.32.21-.59.08-.27-.13-1.13-.42-2.15-1.33-.8-.71-1.34-1.59-1.5-1.86-.16-.27-.02-.42.12-.55.12-.12.27-.32.4-.48.13-.16.17-.27.25-.46.08-.19.04-.35-.02-.48l-.76-1.83c-.2-.48-.4-.41-.68-.42Z"/></svg></a>
+        <a class="floating-action floating-action--cart" href="https://pay.hotmart.com/D106960027E?off=g5adq4pe&sck=tipsfit_landing" data-hotmart-checkout aria-label="Comprar el Menú Mensual"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm10 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4ZM6.2 6l.5 2h11.7l-1.2 5.2a1 1 0 0 1-1 .8H8.6a1 1 0 0 1-1-.76L5.4 4H3V2h4l.5 2H21l-2.1 9.65A3 3 0 0 1 16 16H8.6a3 3 0 0 1-2.92-2.3L3.75 6H6.2Z"/></svg><span>Comprar</span></a>
       </div>
-      <a href="#pagos" data-i18n="stickyBuy">Comprar</a>
-    </nav>
+    </div>
+    <script>
+      const HOTMART_CHECKOUT_URL =
+        "https://pay.hotmart.com/D106960027E?off=g5adq4pe&sck=tipsfit_landing";
 
-    <script src="src/js/config.js"></script>
-    <script src="src/js/i18n.js"></script>
-    <script src="src/js/app.js"></script>
+      document.querySelectorAll("[data-hotmart-checkout]").forEach((checkoutTrigger) => {
+        if (checkoutTrigger.tagName === "A") {
+          checkoutTrigger.href = HOTMART_CHECKOUT_URL;
+          checkoutTrigger.removeAttribute("target");
+        } else {
+          checkoutTrigger.addEventListener("click", () => {
+            window.location.href = HOTMART_CHECKOUT_URL;
+          });
+        }
+      });
+
+      document.querySelectorAll("[data-pending]").forEach((link) => {
+        link.addEventListener("click", (event) => {
+          event.preventDefault();
+        });
+      });
+
+      const selectableCards = Array.from(document.querySelectorAll(".selectable-card"));
+      const mobileCardsQuery = window.matchMedia("(max-width: 767px)");
+      const clearSelectedCard = () => {
+        selectableCards.forEach((card) => {
+          card.classList.remove("is-selected");
+          card.setAttribute("aria-pressed", "false");
+        });
+      };
+      const toggleSelectedCard = (card) => {
+        const alreadySelected = card.classList.contains("is-selected");
+        clearSelectedCard();
+        if (!alreadySelected) {
+          card.classList.add("is-selected");
+          card.setAttribute("aria-pressed", "true");
+        }
+      };
+
+      selectableCards.forEach((card) => {
+        card.addEventListener("click", (event) => {
+          if (!mobileCardsQuery.matches) return;
+          event.stopPropagation();
+          toggleSelectedCard(card);
+        });
+        card.addEventListener("keydown", (event) => {
+          if (!mobileCardsQuery.matches) return;
+          if (event.key !== "Enter" && event.key !== " ") return;
+          event.preventDefault();
+          toggleSelectedCard(card);
+        });
+      });
+
+      document.addEventListener("click", () => {
+        if (mobileCardsQuery.matches) clearSelectedCard();
+      });
+      mobileCardsQuery.addEventListener("change", clearSelectedCard);
+
+      const footer = document.querySelector(".footer");
+      const floatingActions = document.querySelector(".floating-actions");
+
+      if (footer && floatingActions) {
+        const floatingHideMargin = Math.ceil(
+          floatingActions.getBoundingClientRect().height + 56
+        );
+        const footerObserver = new IntersectionObserver(
+          ([entry]) => {
+            floatingActions.classList.toggle(
+              "floating-actions--footer-visible",
+              entry.isIntersecting
+            );
+          },
+          {
+            root: null,
+            threshold: 0,
+            rootMargin: `0px 0px ${floatingHideMargin}px 0px`
+          }
+        );
+
+        footerObserver.observe(footer);
+      }
+
+      if (new URLSearchParams(window.location.search).has("qa-scroll-bottom")) {
+        window.addEventListener("load", () => {
+          requestAnimationFrame(() => {
+            window.scrollTo(0, document.documentElement.scrollHeight);
+          });
+        });
+      }
+
+      if (new URLSearchParams(window.location.search).has("qa-footer-report")) {
+        window.addEventListener("load", () => {
+          requestAnimationFrame(() => {
+            window.scrollTo(0, document.documentElement.scrollHeight);
+            setTimeout(() => {
+              const footerRect = footer?.getBoundingClientRect();
+              const actionsStyle = floatingActions ? getComputedStyle(floatingActions) : null;
+              const probe = document.elementFromPoint(Math.floor(window.innerWidth / 2), window.innerHeight - 2);
+              document.body.textContent = JSON.stringify({
+                innerWidth: window.innerWidth,
+                innerHeight: window.innerHeight,
+                scrollHeight: document.documentElement.scrollHeight,
+                scrollY: window.scrollY,
+                maxScrollY: document.documentElement.scrollHeight - window.innerHeight,
+                footerBottom: footerRect?.bottom,
+                footerHeight: footerRect?.height,
+                floatingActionsPosition: actionsStyle?.position,
+                floatingActionsVisibility: actionsStyle?.visibility,
+                floatingActionsOpacity: actionsStyle?.opacity,
+                probeTag: probe?.tagName,
+                probeClass: probe?.className,
+                horizontalOverflow: document.documentElement.scrollWidth > window.innerWidth,
+                footerEndsViewport: footerRect ? Math.abs(footerRect.bottom - window.innerHeight) <= 1 : false
+              }, null, 2);
+            }, 250);
+          });
+        });
+      }
+
+      document.querySelectorAll(".faq details").forEach((item) => {
+        item.addEventListener("toggle", () => {
+          if (!item.open) return;
+          document.querySelectorAll(".faq details").forEach((other) => {
+            if (other !== item) other.open = false;
+          });
+        });
+      });
+    </script>
   </body>
 </html>
