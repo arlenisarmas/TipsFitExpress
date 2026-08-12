@@ -296,7 +296,9 @@ main {
 
 .hero-offer__button {
   width: 100%;
+  max-width: 100%;
   min-width: 0;
+  box-sizing: border-box;
   min-height: 43px;
   box-shadow: none;
 }
@@ -570,12 +572,6 @@ h2 {
   line-height: 1.32;
   font-weight: 500;
 }
-.transition-note::before {
-  margin-right: 12px;
-  color: var(--green);
-  content: "◜";
-}
-
 .includes {
   display: grid;
   grid-template-columns: minmax(280px, 42%) minmax(0, 58%);
@@ -598,10 +594,8 @@ h2 {
 .tablet-wrap img {
   width: min(100%, 520px);
   margin-inline: auto;
-  --tablet-image-top-crop: 26px;
-  --tablet-image-right-crop: 22px;
-  clip-path: inset(var(--tablet-image-top-crop) var(--tablet-image-right-crop) 0 0);
-  margin-top: calc(var(--tablet-image-top-crop) * -1);
+  clip-path: inset(11px 7px 0 0);
+  transform: translateY(-11px);
   border-radius: inherit;
 }
 
@@ -753,6 +747,10 @@ h2 {
   font-weight: 500;
 }
 .bonus-price {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  column-gap: 8px;
   margin-top: auto;
   padding-top: 14px;
   border-top: 1px solid #e8edf0;
@@ -775,8 +773,10 @@ h2 {
   text-transform: uppercase;
 }
 .bonus-price s {
+  grid-column: 1;
+  justify-self: start;
   color: #99a0a8;
-  margin-right: 8px;
+  margin-right: 0;
 }
 @keyframes free-badge-pop {
   0%,
@@ -800,6 +800,7 @@ h2 {
   }
 }
 .bonus-price strong {
+  grid-column: 2;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -1314,8 +1315,9 @@ h2 {
 .footer {
   box-sizing: border-box;
   display: grid;
-  grid-template-columns: 1fr auto 235px;
+  grid-template-columns: 1fr;
   align-items: center;
+  justify-items: center;
   gap: 24px;
   height: auto;
   min-height: 62px;
@@ -1402,6 +1404,8 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
+  grid-column: 1 / -1;
+  width: 100%;
   gap: 14px;
 }
 
@@ -1917,6 +1921,13 @@ a:focus-visible, summary:focus-visible {
     font-size: clamp(16px, 1vw, 22px);
   }
 
+  .hero-offer__button {
+    width: min(100%, 330px);
+    max-width: 100%;
+    min-width: 0;
+    margin-inline: auto;
+  }
+
   .problems,
   .includes,
   .bonuses,
@@ -2087,6 +2098,13 @@ a:focus-visible, summary:focus-visible {
   .button {
     min-width: clamp(450px, 18vw, 620px);
     min-height: clamp(68px, 2.4vw, 88px);
+  }
+
+  .hero-offer__button {
+    width: min(100%, 330px);
+    max-width: 100%;
+    min-width: 0;
+    margin-inline: auto;
   }
 }
 
@@ -2714,6 +2732,10 @@ a:focus-visible, summary:focus-visible {
     flex-wrap: wrap;
     align-items: center;
     gap: 8px;
+  }
+
+  .bonus-price strong {
+    margin-left: clamp(12px, 5vw, 28px);
   }
 
   .result-grid {
